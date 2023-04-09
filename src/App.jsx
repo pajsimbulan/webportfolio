@@ -1,15 +1,17 @@
-import { useState } from 'react'
-import Temp from './Temp'
-
+import * as React from 'react';
+import Home from './Home'
+import About from './About'
+import Projects from './Projects'
+import Contacts from './Contacts'
+import Navbar from './components/Navbar'
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="App">
-      <Temp />
-      <Temp />
-      <Temp />
-      <Temp />
+    <div className="App"> 
+      <Navbar />
+      <Home />
+      <About />
+      <Projects />
+      <Contacts />
     </div>
   
   )
