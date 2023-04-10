@@ -3,6 +3,7 @@ min-height: 100vh;
 display:flex;
 flex-direction: column;
 background-color: #ffffff;
+
 }
 
 img {
@@ -10,13 +11,16 @@ img {
     height: 200px;
 }
 
-.container {
+.container-outer {
     display: flex;
+    flex-direction: column;
+    margin: 300px 0 0 200px;
+  
+}
+
+.container-inner {
+    display:flex;
     flex-direction: row;
-    position: absolute;
-    gap: 20px;
-    top: 30%;
-    left: 20%;
 }
 
 .homeText {
@@ -25,14 +29,24 @@ img {
 
 .homeText > h1 {
     margin-bottom: 5px;
-    font-size: 40px;
+    font-size: 40px; 
 }
 .homeText > p {
     font-size: 20px;
-    color:'black';
+}
+
+.homeText >.p1 {
+    margin-top: 5px;
 }
 
 img {
     width: 200px;
     height: 200px;  
+}
+
+.scrollContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 200px 0 0 0;
+    padding: 50px;
 }
