@@ -5,9 +5,10 @@ import Projects from './Projects'
 import Contacts from './Contacts'
 import Navbar from './components/Navbar'
 function App() {
+  const [darkMode, setDarkMode] = React.useState(false)
   return (
     <div className="App"> 
-      <Navbar />
+      <Navbar _darkMode={darkMode} _setDarkMode={() => {setDarkMode(!darkMode)}}/>
       <Home />
       <About />
       <Projects />

@@ -1,10 +1,43 @@
 .navbar {
     display:flex;
     flex-direction: row;
-    justify-content: end;
-    gap: 30px;
-    margin-right: 20px;
+    justify-content: space-between;
     position: sticky;
     top: 0;
     background-color: #ffffff;
-    }
+    padding: 10px;
+   
+}
+
+.name_logo {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    font-size: 10px;
+}
+
+.navigations {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;   
+}
+
+ a {
+    text-decoration: none;
+    padding: 10px;
+    color:#0a1229;
+    font-size: 20px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+.name_logo > img {
+    width: 40px;
+    height: 40px;  
+}

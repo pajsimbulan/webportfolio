@@ -1,20 +1,29 @@
 section {
 min-height: 100vh;
-}
-
-.navbar {
 display:flex;
-flex-direction: row;
-justify-content: end;
-gap: 30px;
-margin-right: 20px;
-position: sticky;
-top: 0;
+flex-direction: column;
 background-color: #ffffff;
 }
 
-a {
-    text-decoration: none;
-    padding: 10px;
-    background-color: beige;
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+.homeText {
+    margin: auto 10px auto 0;
+    font-size: 20px;
+}
+
+img {
+    width: 200px;
+    height: 200px;  
 }

@@ -1,12 +1,33 @@
 import * as React from 'react';
 import './Components.css';
-function Navbar() {
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSun } from '@fortawesome/free-solid-svg-icons'
+import { faMoon } from '@fortawesome/free-solid-svg-icons'
+import logo from '../assets/monogram-svg.svg';
+
+function Navbar({ _darkMode, _setDarkMode}) {
+    
     return (
         <div className="navbar">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contacts">Contact</a>
+                <div className="name_logo">
+                    <img src={logo} alt="ps logo" />
+                    <h1>Paul Simbulan</h1>
+                </div>
+                <div className="navgations">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contacts">Contact</a>
+                    <button onClick={_setDarkMode}>
+                        {_darkMode? 
+                            <FontAwesomeIcon icon={faMoon} style={{color: "#000000",height:'20px',width:'20px', margin:'auto 0 auto 0'}} size="large" />
+                        :
+                        <FontAwesomeIcon icon={faSun} style={{color: "#000000",height:'20px',width:'20px', margin:'auto 0 auto 0'}} size="large" />}
+                    </button>
+                    <div />
+                    
+                </div>
+                
         </div>
     );
 }
