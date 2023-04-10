@@ -14,12 +14,20 @@ img {
     display: flex;
     flex-direction: row;
     position: absolute;
+    gap: 20px;
     top: 30%;
     left: 20%;
 }
 
 .homeText {
     margin: auto 10px auto 0;
+}
+
+.homeText > h1 {
+    margin-bottom: 5px;
+    font-size: 40px;
+}
+.homeText > p {
     font-size: 20px;
 }
 

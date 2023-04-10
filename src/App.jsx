@@ -4,6 +4,7 @@ import About from './About'
 import Projects from './Projects'
 import Contacts from './Contacts'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 function App() {
   const [darkMode, setDarkMode] = React.useState(false)
   return (
@@ -13,6 +14,7 @@ function App() {
       <About />
       <Projects />
       <Contacts />
+      <Footer />
     </div>
   
   )

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './Components.css';
+import './Navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSun } from '@fortawesome/free-solid-svg-icons'
 import { faMoon } from '@fortawesome/free-solid-svg-icons'
@@ -11,7 +11,7 @@ function Navbar({ _darkMode, _setDarkMode}) {
         <div className="navbar">
                 <div className="name_logo">
                     <img src={logo} alt="ps logo" />
-                    <h1>Paul Simbulan</h1>
+                    <p>Paul Simbulan</p>
                 </div>
                 <div className="navgations">
                     <a href="#home">Home</a>
