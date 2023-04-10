@@ -13,7 +13,7 @@ function Navbar({ _darkMode, _setDarkMode}) {
                     <img src={logo} alt="ps logo" />
                     <p>Paul Simbulan</p>
                 </div>
-                <div className="navgations">
+                <div className="navigations">
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
                     <a href="#projects">Projects</a>

@@ -6,7 +6,6 @@
     top: 0;
     background-color: #ffffff;
     padding: 10px;
-   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1);
 }
 
 .footer {
@@ -20,28 +19,34 @@
  
 }
 
-
 .navigations {
     display: flex;
     flex-direction: row;
     gap: 40px;   
 }
 
- a {
+a {
     text-decoration: none;
     padding: 10px;
     color:#0a1229;
     font-size: 20px;
+    background-image: linear-gradient(black, black);
+    background-size: 0% 5px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: background-size 0.3s;
 }
+
+a:hover {
+    background-size: 100% 2px;
+}
+
 
 button {
     background-color: transparent;
     border: none;
     padding: 10px;
     cursor: pointer;
-    
-
-    
 }
 
 .name_logo > img {
@@ -61,6 +66,7 @@ button {
     margin: auto 0 auto 0;
     font-size: 15px;
     font-weight: bold;
+    color: black;
 }
 
 

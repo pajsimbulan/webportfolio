@@ -9,9 +9,9 @@
     gap:10px;
 }
 
-p {
+.footer > p {
     font-size: 8px;
-    color: #0a1229;
+    color: #183153;
     font-weight: bold;
 }   
 
