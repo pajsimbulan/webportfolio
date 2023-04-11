@@ -27,6 +27,13 @@
 }
 
  .technologiesContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     width:500px;
     border:solid;
+}
+
+.aboutTextContainer span {
+    font-weight: bold;
 }

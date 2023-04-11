@@ -16,8 +16,8 @@ function Home() {
                                 <FontAwesomeIcon icon={faHands} style={{marginLeft:'10px'}}/>
                             </span>
                         </h1>
-                        <p>I'm a <span style={{fontWeight:'bold'}}> Software Engineer</span></p>
-                        <p className="p1">Come see my work <FontAwesomeIcon icon={faArrowDown} style={{margin:'auto 0 auto 10px'}}/></p>
+                        <p>I'm a <span style={{fontWeight:'bold'}}> Software Engineer.</span></p>
+                        <p className="p1">Come get to know <span><a href="#about">me</a></span> and see my <span><a href="#projects">work</a></span> <FontAwesomeIcon icon={faArrowDown} style={{margin:'auto 0 auto 10px'}}/></p>
                     </div>
                 </div>
             </div>

@@ -23,11 +23,11 @@ img {
 }
 
 .homeText {
-    margin: auto 10px auto 0;
+    margin: auto 10px auto 20px;
 }
 
 .homeText > h1 {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-size: 40px; 
 }
 .homeText > p {
@@ -35,10 +35,17 @@ img {
 }
 
 .homeText >.p1 {
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 img {
     width: 200px;
     height: 200px;  
+}
+
+.homeText > p a {
+    padding: 0px;
+    color:#183153;
+    font-weight: bold;
+    margin-top: 10px;
 }
