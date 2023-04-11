@@ -17,12 +17,8 @@ function Home() {
                             </span>
                         </h1>
                         <p>I'm a <span style={{fontWeight:'bold'}}> Software Engineer</span></p>
-                        <p className="p1">Come see my work</p>
+                        <p className="p1">Come see my work <FontAwesomeIcon icon={faArrowDown} style={{margin:'auto 0 auto 10px'}}/></p>
                     </div>
-                </div>
-                <div className='scrollContainer'>
-                    Scroll for more
-                    <FontAwesomeIcon icon={faArrowDown} style={{margin:'auto 0 auto 10px'}}/>
                 </div>
             </div>
         </section>

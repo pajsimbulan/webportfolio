@@ -1,0 +1,32 @@
+.about {
+    padding: 100px;
+    display:"flex";
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutTextContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 500px;
+    gap:20px;
+}
+
+.aboutTextContainer p {
+    color:#565772;
+}
+
+.rowContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:40px;
+    margin-top: 20px;
+    width:100%;
+}
+
+ .technologiesContainer {
+    width:500px;
+    border:solid;
+}

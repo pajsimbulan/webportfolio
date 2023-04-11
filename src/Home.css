@@ -3,7 +3,6 @@ min-height: 100vh;
 display:flex;
 flex-direction: column;
 background-color: #ffffff;
-
 }
 
 img {
@@ -42,11 +41,4 @@ img {
 img {
     width: 200px;
     height: 200px;  
-}
-
-.scrollContainer {
-    display: flex;
-    flex-direction: row;
-    margin: 200px 0 0 0;
-    padding: 50px;
 }
