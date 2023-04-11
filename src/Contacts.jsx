@@ -13,36 +13,31 @@ function Contacts() {
         nameRef.current.value = '';
         emailRef.current.value = '';
         messageRef.current.value = '';
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });
+       
       };
 
     return (
         <section id="contacts" className="contacts">   
-            <h1>Contacts</h1>
-            <div className="container">
-                <div className="container-2 forms">
-                    <form onSubmit={handleSubmit}>
+        <h1>Contacts</h1>
+        <div className="container">
+            <div className="container-2 forms">
+                <form onSubmit={handleSubmit}>
                         <p>Name</p>
                         <input type="text" id="name" ref={nameRef} />
                         <p htmlFor="email">Email:</p>
                         <input type="email" id="email" ref={emailRef} />
                         <p htmlFor="message">Message:</p>
-                        <textarea id="message" ref={messageRef} />
-                        <button type="submit">Submit</button>
-                    </form>
-                </div>
-                <div className="container-2 contactInfo">
-                    <h2>Connect with me</h2>
-                    <p>Feel free to reach out to me directly through email or leave your contact information along with a message. I am open to any ideas or feedback, or you can simply say hi! Anything is appreciated.</p>
-                    <p>Anonymous message is fine, too</p>
-                </div>
+                        <textarea id="message" ref={messageRef} rows="10" resize="none"/>
+                </form>
+                <button type="button" onClick={(event) => handleSubmit(event)}>Submit</button>
             </div>
-        </section>
+            <div className="container-2 contactInfo">
+                <h2>Connect with me</h2>
+                <p>Feel free to reach out to me directly through email or leave your contact information along with a message. I am open to any ideas or feedback, or you can simply say hi! Anything is appreciated.</p>
+                <p>Anonymous message is fine, too</p>
+            </div>
+        </div>
+    </section>
     );
 }
 

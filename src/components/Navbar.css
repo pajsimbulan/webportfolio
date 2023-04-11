@@ -8,17 +8,6 @@
     padding: 10px;
 }
 
-.footer {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: sticky;
-    bottom: 0;
-    background-color: #ffffff;
-    padding: 10px;
- 
-}
-
 .navigations {
     display: flex;
     flex-direction: row;
@@ -68,6 +57,3 @@ button {
     font-weight: bold;
     color: black;
 }
-
-
-

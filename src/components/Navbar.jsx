@@ -1,12 +1,10 @@
 import * as React from 'react';
 import './Navbar.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSun } from '@fortawesome/free-solid-svg-icons'
-import { faMoon } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSun, faMoon, faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import logo from '../assets/monogram-svg.svg';
 
-function Navbar({ _darkMode, _setDarkMode}) {
-    
+function Navbar({ _darkMode, _setDarkMode, openModal }) {
     return (
         <div className="navbar">
                 <div className="name_logo">
@@ -24,8 +22,9 @@ function Navbar({ _darkMode, _setDarkMode}) {
                         :
                         <FontAwesomeIcon icon={faSun} style={{color: "#000000",height:'20px',width:'20px', margin:'auto 0 auto 0'}} size="large" />}
                     </button>
-                    <div />
-                    
+                    <button onClick={openModal}>
+                        <FontAwesomeIcon icon={faBars} style={{color: "#000000",height:'20px',width:'20px', margin:'auto 0 auto 0'}} size="large" />
+                    </button>
                 </div>
                 
         </div>
