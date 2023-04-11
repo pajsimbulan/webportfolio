@@ -1,14 +1,16 @@
 .about {
-    padding: 100px;
-    display:"flex";
+    padding: 100px 200px 100px 200px;
+    display:flex;
     flex-direction: column;
     align-items: center;
+   
 }
 
 .aboutTextContainer {
     display: flex;
     flex-direction: column;
     text-align: center;
+    min-width: 300px;
     width: 500px;
     gap:20px;
 }
@@ -21,19 +23,48 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap:40px;
     margin-top: 20px;
     width:100%;
 }
 
  .technologiesContainer {
-    display: flex;
-    flex-direction: column;
     text-align: center;
     width:500px;
-    border:solid;
+    max-height: 500px;
+    min-width: 300px;
+    
 }
 
 .aboutTextContainer span {
     font-weight: bold;
+}
+
+.techstacks {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+    overflow:auto;
+    flex-wrap: wrap;
+}
+
+.techCard {
+    border-radius: 20px;
+    padding: 10px;
+    background-color: whitesmoke;
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.1);
+}
+.techstacks img {
+    width: 50px;
+    height: 50px;
+    margin:5px;
+    
+}
+
+.techCard p {
+    font-size: 10px;
+    font-weight: bold;
+    color:#565772;
 }

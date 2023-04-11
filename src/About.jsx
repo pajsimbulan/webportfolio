@@ -9,7 +9,7 @@ import express from './assets/express.svg';
 import mongodb from './assets/mongodb.svg';
 import python from './assets/python.svg';
 import java from './assets/java.svg';
-import cplusplus from './assets/plusplus.svg';
+import cplusplus from './assets/cplusplus.svg';
 import c from './assets/c.svg';
 import git from './assets/git.svg';
 import supabase from './assets/supabase.svg';
@@ -21,6 +21,38 @@ import expo from './assets/expo.svg';
 import vite from './assets/vite.svg';
 import docker from './assets/docker.svg';
 import jest from './assets/jest.svg';
+import npm from './assets/npm.svg';
+import yarn from './assets/yarn.svg';
+
+
+const technologies = ['HTML', 'CSS', 'Javascript', 'Typescript', 'React', 'ExpressJS', 
+'MongoDB', 'Python', 'Java', 'C++', 'C', 'Git', 'Supabase', 'MaterialUI', 'NodeJS', 'Postgresql', 'Figma', 'Expo', 'Vite', 'Docker', 'Jest', 'NPM', 'Yarn'];
+const techImages = {
+    HTML: html,
+    CSS: css,
+    Javascript: javascript,
+    Typescript: typescript,
+    React: react,
+    ExpressJS: express,
+    MongoDB: mongodb,
+    Python: python,
+    Java: java,
+    'C++': cplusplus,
+    C: c,
+    Git: git,
+    Supabase: supabase,
+    MaterialUI: materialui,
+    NodeJS: nodejs,
+    Postgresql: postgresql,
+    Figma: figma,
+    Expo: expo,
+    Vite: vite,
+    Docker: docker,
+    Jest: jest,
+    NPM: npm,
+    Yarn: yarn
+  };
+  
 function About() {
     /**
      * html +
@@ -69,7 +101,15 @@ function About() {
                 </div>
                 <div className="technologiesContainer">
                     <h2>Technologies</h2>
-                <img src={mongodb}></img>
+                    <div className="techstacks">
+                        {technologies.map((tech) => { return (
+                          <div className="techCard" key={tech}>
+                          <img src={techImages[tech]} alt={tech} />
+                            <p>{tech}</p>
+                        </div>
+                        )})}
+                        
+                    </div>
                 </div>
                 
             </div>
