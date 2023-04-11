@@ -3,6 +3,7 @@ import './Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faFile } from '@fortawesome/free-solid-svg-icons';
+import gmail from '../assets/gmail.svg';
 
 function Footer({ _darkMode, _setDarkMode}) {
     
@@ -18,6 +19,10 @@ function Footer({ _darkMode, _setDarkMode}) {
             <button onClick={() => openLink('https://www.linkedin.com/in/pauljsimbulan/')}>
                 <FontAwesomeIcon icon={faLinkedin} style={{color: "#0b66c2", height:'20px',width:'20px', margin:'auto 0 auto 0'}} size="large" />
             </button>   
+            <button onClick={() => window.location.href = 'mailto:info@paulsimbulan.com'}>
+                <img src={gmail} alt="gmail icon" style={{height:'20px',width:'20px', margin:'auto 0 auto 0'}}/>
+            </button>
+
             <button onClick={() => openLink('https://yourwebsite.com/your_resume.pdf')}>
                 <FontAwesomeIcon icon={faFile} style={{color: "#183153", height:'20px',width:'20px', margin:'10px 0 auto 0'}} size="large" />
                 <p>RESUME</p>

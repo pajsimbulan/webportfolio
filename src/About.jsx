@@ -91,16 +91,16 @@ function About() {
                         from learning the Microarchitecture of CPU with RISC-V to data structures and utilizing a full tech stack. 
                     </p>
                     <p>
-                        From my recent solo project, <span>Mailman</span>, I learned how to fully build a full stack application independently and attempt to innovate a new way to to send emails and 
+                        From my recent solo project, <span>Mailman</span>, I learned how to fully build a full stack application independently and attempt to innovate a new way to send emails and 
                         deploy it to the cloud.  I also learned the drawbacks of trying to work alone and the importance of working with a team.
                     </p>
                     <p>
                         My featured project <span>Slugfit</span> is a mobile application that I built with a team of 5 other students.  In that project, I learned to function as a team and how to 
-                        work with a team to build a product.  While practicing <span>Agile Methodologies</span> and <span>Scrum</span> in building that project, I learned to properly manage my time in approaching a task to reach a deadline.
+                        work with a team to build a product.  While practicing <span>Agile Methodologies</span> and <span>Scrum</span> in building that project, I learned to properly manage my time in executing a task to reach a deadline.
                     </p>
                 </div>
                 <div className="technologiesContainer">
-                    <h2>Technologies</h2>
+                    <h1>Technologies</h1>
                     <div className="techstacks">
                         {technologies.map((tech) => { return (
                           <div className="techCard" key={tech}>
