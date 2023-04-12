@@ -11,9 +11,9 @@ function Projects() {
                 </div>
             </div>
             <div className="projectContainer p2"> 
-                <div className="projectImage">
-                </div>
                 <div className="projectText">
+                </div>
+                <div className="projectImage">
                 </div>
             </div>
             <div className="projectContainer p3"> 
@@ -23,9 +23,9 @@ function Projects() {
                 </div>
             </div>
             <div className="projectContainer p4"> 
-                <div className="projectImage">
-                </div>
                 <div className="projectText">
+                </div>
+                <div className="projectImage">
                 </div>
             </div>
             

@@ -2,7 +2,7 @@ import * as React from 'react';
 import './Home.css';
 import logo from './assets/monogram-svg.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHands, faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 function Home() {
     return (
@@ -12,12 +12,12 @@ function Home() {
                     <img src={logo} alt="ps logo" />
                     <div className='homeText'>
                         <h1>Hi, I'm Paul
-                            <span className="handWave">  
-                                <FontAwesomeIcon icon={faHands} style={{marginLeft:'10px'}}/>
+                            <span className="wave">  
+                                &#128075;
                             </span>
                         </h1>
                         <p>I'm a <span style={{fontWeight:'bold'}}> Software Engineer.</span></p>
-                        <p className="p1">Come get to know <span><a href="#about">me</a></span> and see my <span><a href="#projects">work</a></span> <FontAwesomeIcon icon={faArrowDown} style={{margin:'auto 0 auto 10px'}}/></p>
+                        <p className="p1">Come get to know <span><a href="#about">me</a></span> and see my <span><a href="#projects">work</a></span> <a href='#about'><FontAwesomeIcon icon={faArrowDown} style={{margin:'auto 0 auto 10px'}}/></a></p>
                     </div>
                 </div>
             </div>
