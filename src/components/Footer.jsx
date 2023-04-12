@@ -13,20 +13,25 @@ function Footer({ _darkMode, _setDarkMode}) {
 
     return (
         <div className="footer">
-            <button onClick={() => openLink('https://github.com/pajsimbulan')}>
-                <FontAwesomeIcon icon={faGithub} style={{color: "#000000", height:'20px',width:'20px', margin:'auto 0 auto 0'}} size="large" />
-            </button>   
-            <button onClick={() => openLink('https://www.linkedin.com/in/pauljsimbulan/')}>
-                <FontAwesomeIcon icon={faLinkedin} style={{color: "#0b66c2", height:'20px',width:'20px', margin:'auto 0 auto 0'}} size="large" />
-            </button>   
-            <button onClick={() => window.location.href = 'mailto:info@paulsimbulan.com'}>
-                <img src={gmail} alt="gmail icon" style={{height:'20px',width:'20px', margin:'auto 0 auto 0'}}/>
-            </button>
+            <div className="linkRow">
+                <button onClick={() => openLink('https://github.com/pajsimbulan')}>
+                    <FontAwesomeIcon icon={faGithub} style={{color: "#000000", height:'20px',width:'20px', margin:'auto 0 auto 0'}} size="large" />
+                </button>   
+                <button onClick={() => openLink('https://www.linkedin.com/in/pauljsimbulan/')}>
+                    <FontAwesomeIcon icon={faLinkedin} style={{color: "#0b66c2", height:'20px',width:'20px', margin:'auto 0 auto 0'}} size="large" />
+                </button>   
+                <button onClick={() => window.location.href = 'mailto:info@paulsimbulan.com'}>
+                    <img src={gmail} alt="gmail icon" style={{height:'20px',width:'20px', margin:'auto 0 auto 0'}}/>
+                </button>
 
-            <button onClick={() => openLink('https://yourwebsite.com/your_resume.pdf')}>
-                <FontAwesomeIcon icon={faFile} style={{color: "#183153", height:'20px',width:'20px', margin:'10px 0 auto 0'}} size="large" />
-                <p>RESUME</p>
-            </button>
+                <button onClick={() => openLink('https://yourwebsite.com/your_resume.pdf')}>
+                    <FontAwesomeIcon icon={faFile} style={{color: "#183153", height:'20px',width:'20px', margin:'10px 0 auto 0'}} size="large" />
+                    <p>RESUME</p>
+                </button>
+            </div>
+            <div className='copyrightRow'>
+                <p>© 2023 Paul Simbulan</p>
+            </div>
         </div>
     );
 }
