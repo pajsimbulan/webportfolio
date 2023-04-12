@@ -99,8 +99,9 @@ function About() {
                         work with a team to build a product.  While practicing <span>Agile Methodologies</span> and <span>Scrum</span> in building that project, I learned to properly manage my time in executing a task to reach a deadline.
                     </p>
                 </div>
+                <div className='line'/>
                 <div className="technologiesContainer">
-                    <h1>Technologies</h1>
+                    <h1>Technologies and Tools</h1>
                     <div className="techstacks">
                         {technologies.map((tech) => { return (
                           <div className="techCard" key={tech}>
