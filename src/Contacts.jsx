@@ -4,21 +4,61 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faFile } from '@fortawesome/free-solid-svg-icons';
 import gmail from './assets/gmail.svg';
+import emailjs from '@emailjs/browser';
+
+const TO_NAME = 'Paul';
+const REPLY_TO_EMAIL = 'info@paulsimbulan.com';
 
 function Contacts() {
     const nameRef = React.useRef();
     const emailRef = React.useRef();
-    const messageRef = React.useRef()
+    const messageRef = React.useRef();
+    const [sendingEmail, setSendingEmail] = React.useState(false);
+    const [successfulEmail, setSuccessfulEmail] = React.useState(false);
+    const [failedEmail, setFailedEmail] = React.useState(false);
     
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log(`Name: ${nameRef.current.value}`);
+        console.log(`Name: ${nameRef.current.value}`);  
         console.log(`Email: ${emailRef.current.value}`);
         console.log(`Message: ${messageRef.current.value}`);
-        nameRef.current.value = '';
-        emailRef.current.value = '';
-        messageRef.current.value = '';
-       
+        console.log(`sending email ${nameRef.current.value} - <${emailRef.current.value}> with message ${messageRef.current.value}`);
+        setSendingEmail(true);
+        let status = '';
+        await emailjs.send('service_8sarxo8', 'contact_form', {
+            from_name: `${nameRef.current.value} <${emailRef.current.value}>`,
+            to: TO_NAME,
+            message: `${messageRef.current.value}`,
+            reply_to: REPLY_TO_EMAIL
+        }, 'Ta1twmm7Oo0s7v4Nn')
+        .then((result) => {
+            console.log(result.text);
+            status = 'success';
+        }, (error) => {
+            console.log(error.text);
+            status = 'failed';
+        }).catch((error) => {
+            status = 'failed';
+            console.log(error);
+        }).finally(() => {
+            nameRef.current.value = '';
+            emailRef.current.value = '';
+            messageRef.current.value = '';
+            setSendingEmail(false);
+            if(status === 'success') {
+                setSuccessfulEmail(true);
+                setTimeout(() => {
+                    setSuccessfulEmail(false);
+                }, 2000);
+            }
+            if(status === 'failed') {
+                setFailedEmail(true);
+                setTimeout(() => {
+                    setFailedEmail(false);
+                }, 6000);
+            }
+        });
+        
       };
 
       const openLink = (url) => {
@@ -27,12 +67,42 @@ function Contacts() {
 
     return (
         <section id="contacts" className="contacts">   
+        {sendingEmail && 
+        <div className="modal" data-backdrop="static">
+            <div className="modalLoadingContents">
+                <div className="loading-spinner"></div>
+                <div>Sending Email</div>
+            </div>
+        </div>}
+        {successfulEmail &&
+        <div className="modalAlert" data-backdrop="static">
+            <div className="modalSuccessContents">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+                    <circle className="path circle" fill="none" stroke="#198754" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1" />
+                    <polyline className="path check" fill="none" stroke="#198754" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 " /> 
+                </svg> 
+                <p style={{fontWeight:'bold'}}>Message Successfully Sent!</p>
+            </div >
+        </div>}
+        {failedEmail &&
+        <div className="modalAlert" data-backdrop="static">
+            <div className='modalFailureContents'>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+                    <circle class="path circle" fill="none" stroke="#db3646" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1" /> 
+                    <line class="path line" fill="none" stroke="#db3646" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" x1="34.4" y1="37.9" x2="95.8" y2="92.3" />
+                    <line class="path line" fill="none" stroke="#db3646" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" x1="95.8" y1="38" X2="34.4" y2="92.2" /> 
+                </svg>
+                <p style={{fontWeight:'bold'}}>Automated Message Failed to Send!</p>
+                <p style={{color:'#6b7280'}}>Sorry for the Inconvenice.  Please reach out to me through email directly for the meantime.</p>
+            </div>
+        </div>}
         <h1>Contacts</h1>
         <div className="container">
             <div className="container-2 contactInfo">
                 <h2>Connect with me</h2>
                 <p>Feel free to reach out to me directly through email or leave your contact information along with a message.</p> 
-                <p>I am open to any opportunities, ideas, or feedback &mdash; or you can simply say hi! Anything is appreciated.</p>
+                <p>I am open to any opportunities, ideas, or feedback &mdash; or you can simply say hi!</p> 
+                <p>Anything is appreciated!</p>
                 <br />
                 <h2>Email:</h2>
                 <p>info@paulsimbulan.com</p>
@@ -77,6 +147,7 @@ function Contacts() {
                 <button type="button" onClick={(event) => handleSubmit(event)}>Submit</button>
             </div>
         </div>
+        
     </section>
     );
 }

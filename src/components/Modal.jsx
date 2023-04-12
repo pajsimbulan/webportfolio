@@ -5,8 +5,21 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import './Modal.css';
 
 const Modal = ({ closeModal }) => {
+
+  React.useEffect(() => {
+    const handleKeyDown = (event) => {
+        closeModal();
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+        window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
+
   return (
-    <div className="modal">
+    <div className="modal" onKeyDown={(event) => {event}}>
       <div className="modalContents">
         <div className='closeRow'>
           <button onClick={closeModal}>
