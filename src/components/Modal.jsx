@@ -8,7 +8,10 @@ const Modal = ({ closeModal }) => {
 
   React.useEffect(() => {
     const handleKeyDown = (event) => {
+      if (event.key === 'Escape')
+      {
         closeModal();
+      }
     };
 
     window.addEventListener('keydown', handleKeyDown);
@@ -19,11 +22,11 @@ const Modal = ({ closeModal }) => {
   }, []);
 
   return (
-    <div className="modal" onKeyDown={(event) => {event}}>
+    <div className="modal">
       <div className="modalContents">
         <div className='closeRow'>
           <button onClick={closeModal}>
-            <FontAwesomeIcon icon={faXmark} size='xl' style={{height:'35px', width:'35px'}}/>
+            <FontAwesomeIcon icon={faXmark} size='xl' style={{height:'30px', width:'30px'}}/>
           </button>
         </div>
         <a href="#home">Home</a>

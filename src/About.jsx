@@ -84,7 +84,7 @@ function About() {
                     <h1>About</h1>
                     <p>
                         I am a <span>Software Engineer</span> based in Bay Area, California.  I have worked with Full-Stack Web Applications, Mobile Applications, and now I am currently setting my 
-                        sights on Artificial Intelligence and Machine Learning.  
+                        sights on Artificial Intelligence and Rust.  
                     </p>
                     <p>
                         I am a graduate of the <span>University of California, Santa Cruz</span> with a <span>Bachelor's Degree</span> in <span>Computer Science</span>, where I learned the fundamentals of programming&mdash;  
@@ -92,7 +92,7 @@ function About() {
                     </p>
                     <p>
                         From my recent solo project, <span>Mailman</span>, I learned how to fully build a full stack application independently and attempt to innovate a new way to send emails and 
-                        deploy it to the cloud.  I also learned the drawbacks of trying to work alone and the importance of working with a team.
+                        deploy it to the cloud.  I also learned the drawbacks of trying to work alone and the importance of working with a team. My goal for this project is to futher enhance it as I grow and gain more experience in the field.  With the rapid advancements in AI technology, I'm looking to apply that to Mailman to make it more efficient &mdash; to make communication even more seamless and accessible. 
                     </p>
                     <p>
                         My featured project <span>Slugfit</span> is a mobile application that I built with a team of 5 other students.  In that project, I learned to function as a team and how to 

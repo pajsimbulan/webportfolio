@@ -43,3 +43,7 @@
     width: 100%;
     justify-content: flex-end;
   }
+
+  .closeRow button {
+    margin: 20px;
+  }
