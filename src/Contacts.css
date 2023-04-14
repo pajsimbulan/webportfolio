@@ -6,6 +6,18 @@
     align-items: center;
 }
 
+@media screen and (max-width: 900px) {
+    .contacts {
+        padding: 50px 100px 50px 100px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contacts {
+        padding: 50px 50px 50px 50px;
+    }
+}
+
 .contacts h1 {
     font-size: 40px;
     font-weight: bold;

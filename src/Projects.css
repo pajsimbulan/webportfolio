@@ -7,6 +7,18 @@
     gap:40px;
 }
 
+@media screen and (max-width: 900px) {
+    .projects {
+        padding: 50px 100px 50px 100px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .projects {
+        padding: 50px 50px 50px 50px;
+    }
+}
+
 .projects h1 {
     font-size: 40px;
     font-weight: 600;

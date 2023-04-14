@@ -3,9 +3,14 @@
     flex-direction: row;
     justify-content: space-between;
     position: sticky;
+    width: 100%;
     top: 0;
-    background-color: #ffffff;
     padding: 10px;
+    z-index: 100;
+}
+
+.hamburger {
+    display: none;
 }
 
 .navigations {
@@ -13,6 +18,7 @@
     flex-direction: row;
     gap: 40px;   
 }
+
 
 a {
     text-decoration: none;
@@ -25,6 +31,7 @@ a {
     background-position: center bottom;
     transition: background-size 0.3s;
 }
+
 
 a:hover {
     background-size: 100% 2px;
@@ -41,6 +48,7 @@ button {
 .name_logo > img {
     width: 40px;
     height: 40px;  
+    margin: auto 0 auto 0;
 }
 
 
@@ -56,4 +64,40 @@ button {
     font-size: 15px;
     font-weight: bold;
     color: black;
+}
+
+@media screen and (max-width: 1200px) {
+    .navigations {
+        gap: 30px;
+    }
+    a {
+        font-size: 14px;
+    }
+    .name_logo > p {
+        font-size: 14px;
+    }
+    .name_logo > img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .navigations a {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .name_logo > p {
+        font-size: 12px;
+    }
+    .name_logo > img {
+        width: 30px;
+        height: 30px;
+    }
 }

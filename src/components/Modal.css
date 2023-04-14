@@ -7,7 +7,7 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(252, 252, 252, 0.8);
+    background-color: rgba(252, 252, 252, 0.95);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,11 +17,12 @@
   .modalContents {
     height: 100%;
     width: 100%;
-    padding: 50px;
+    padding: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 50px;
+    
   }
 
   .modalContents button {
@@ -42,8 +43,43 @@
     flex-direction: row;
     width: 100%;
     justify-content: flex-end;
+    
   }
 
   .closeRow button {
     margin: 20px;
   }
+
+
+  
+@media screen and (max-width: 600px) {
+  .modalContents {
+    gap: 40px;
+  }
+
+  .modal a {
+    font-size: 25px;
+  }
+
+  .closeRow button {
+    margin: 15px;
+  }
+
+
+}
+
+@media screen and (max-width: 450px) {
+  .modalContents {
+    gap: 30px;
+  }
+  .modal a {
+    font-size: 20px;
+  }
+
+  .closeRow button {
+    margin: 12px;
+  }
+
+
+}
+

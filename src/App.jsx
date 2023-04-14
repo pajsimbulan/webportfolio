@@ -16,11 +16,9 @@ function App() {
     <div className="App">
       {openModal ? <Modal closeModal={() => setOpenModal(false)} /> : null}
       <Navbar _darkMode={darkMode} _setDarkMode={() => setDarkMode(!darkMode)} openModal={() => setOpenModal(true)} />
-      <Home />
-      <About />
-      <Projects />
-      <Contacts />
       <Footer />
+      <Home />
+     
     </div>
   );
 }

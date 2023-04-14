@@ -1,21 +1,25 @@
 .home {
-min-height: 100vh;
-display:flex;
-flex-direction: column;
+    height: 100vh;
 background-color: #ffffff;
+padding: 100px 200px 100px 200px;
+}
+@media screen and (max-width: 900px) {
+    .home {
+        padding: 50px 100px 50px 100px;
+    }
 }
 
-img {
-    width: 200px;
-    height: 200px;
+@media screen and (max-width: 600px) {
+    .home {
+        padding: 50px 50px 50px 50px;
+    }
 }
 
-.container-outer {
-    display: flex;
-    flex-direction: column;
-    margin: 300px 0 0 200px;
-  
+.container-outer{
+    position: relative;
+    top:25%;
 }
+
 
 .container-inner {
     display:flex;
@@ -81,3 +85,60 @@ img {
 .home a:hover {
     text-decoration: none;
 }
+
+
+
+@media screen and (max-width: 1200px) {
+    .homeText > h1 {
+        font-size: 35px; 
+    }
+    .homeText > p, .homeText > p a {
+        font-size: 17px;
+    }
+    img {
+        width: 170px;
+        height: 170px;  
+    } 
+
+}
+
+@media screen and (max-width: 900px) {
+    .homeText > h1 {
+        margin-bottom: 10px;
+        font-size: 30px; 
+    }
+    .homeText > p, .homeText > p a {
+        font-size: 14px;
+    }
+    
+    img {
+        width: 140px;
+        height: 140px;  
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .homeText > h1 {
+        margin-bottom: 10px;
+        font-size: 27px; 
+    }
+    .homeText > p, .homeText > p a {
+        font-size: 12px;
+    }
+    
+    img {
+        width: 120px;
+        height: 120px;  
+    }
+}
+
+@media screen and (max-width: 450px) {
+   .container-outer {
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+   }
+}
+

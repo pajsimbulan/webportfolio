@@ -16,7 +16,8 @@ function Navbar({ openModal }) {
                     <a href="#about">About</a>
                     <a href="#projects">Projects</a>
                     <a href="#contacts">Contact</a>
-                    <button onClick={openModal}>
+                    <div />
+                    <button className="hamburger" onClick={openModal}>
                         <FontAwesomeIcon icon={faBars} style={{color: "#000000",height:'20px',width:'20px', margin:'auto 0 auto 0'}} size="large" />
                     </button>
                 </div>
