@@ -5,8 +5,8 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faFile } from '@fortawesome/free-solid-svg-icons';
 import gmail from '../assets/gmail.svg';
 
-function Footer({ _darkMode, _setDarkMode}) {
-    
+function Footer() {
+    const currentYear = new Date().getFullYear();
     const openLink = (url) => {
         window.open(url, "_blank");
     }
@@ -30,7 +30,7 @@ function Footer({ _darkMode, _setDarkMode}) {
                 </button>
             </div>
             <div className='copyrightRow'>
-                <p>© 2023 Paul Simbulan</p>
+                <p>© {currentYear} Paul Simbulan</p>
             </div>
         </div>
     );

@@ -6,7 +6,7 @@ import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 function Home() {
     return (
-        <section id="home" className="home">
+        <div id="home" className="home">
             <div className='container-outer'>
                 <div className="container-inner">  
                     <img src={logo} alt="ps logo" />
@@ -21,7 +21,7 @@ function Home() {
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     );
 }
 

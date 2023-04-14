@@ -23,8 +23,6 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    min-width: 300px;
-    
     gap:20px;
     border-radius: 30px;
     padding: 40px;
@@ -109,3 +107,43 @@
     border-radius: 10px;
 }
 
+@media screen and (max-width: 1200px) {
+    .rowContainer h1 {
+        font-size: 30px;
+    }
+    .aboutTextContainer p {
+        font-size: 14px;
+    }
+    
+    .rowContainer {
+       gap:35px;
+    }
+
+
+}
+
+@media screen and (max-width: 900px) {
+    .rowContainer h1 {
+        font-size: 26px;
+    }
+    .aboutTextContainer p {
+        font-size: 12px;
+    }
+    .rowContainer {
+        gap:30px;
+     }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .rowContainer h1 {
+        font-size: 22px;
+    }
+    .aboutTextContainer p {
+        font-size: 10px;
+    }
+    .rowContainer {
+        gap:20px;
+     }
+}

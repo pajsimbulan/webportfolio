@@ -7,7 +7,6 @@
     background-color: #ffffff;
     width: 100%;
     padding: 10px;
-    gap:5px;
 }
 
 .footer button p {
@@ -22,10 +21,10 @@ button {
 .linkRow, .copyrightRow {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 5px;
 }
 
 .copyrightRow {
-    font-size: 12px;
+    font-size: 10px;
     color: gray;
 }
