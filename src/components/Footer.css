@@ -6,13 +6,16 @@
     bottom: 0;
     background-color: #ffffff;
     width: 100%;
-    padding: 10px;
+    padding: 5px;
 }
 
-.footer button p {
-    font-size: 8px;
+.footer img {
+    font-size: 7px;
     color: #183153;
     font-weight: bold;
+    height: 20px;
+    width: 20px;
+    margin: auto 0 auto 0;
 }   
 
 button {

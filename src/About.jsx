@@ -58,29 +58,6 @@ const techImages = {
   };
   
 function About() {
-    /**
-     * html +
-     * javascript +
-     * css +
-     * react +
-     * express  +
-     * mongodb +
-     * python +
-     * java + 
-     * c++ +
-     * c +
-     * git +
-     * supabase +
-     * typescript +
-     * material ui  +
-     * node js +
-     * postgresql +
-     * figma +
-     * expo +
-     * vite +
-     * docker +
-     * jest +
-     */
     return (
         <section id="about" className="about">
             <div className="rowContainer">

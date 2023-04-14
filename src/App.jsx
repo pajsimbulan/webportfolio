@@ -17,8 +17,8 @@ function App() {
       {openModal ? <Modal closeModal={() => setOpenModal(false)} /> : null}
       <Navbar openModal={() => setOpenModal(true)} />
       <Home />
+      <About />
       <Footer />
-     
     </div>
   );
 }

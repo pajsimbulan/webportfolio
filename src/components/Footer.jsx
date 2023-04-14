@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faFile } from '@fortawesome/free-solid-svg-icons';
 import gmail from '../assets/gmail.svg';
+import resumeicon from '../assets/resumeicon.svg';
 
 function Footer() {
     const currentYear = new Date().getFullYear();
@@ -21,15 +22,14 @@ function Footer() {
                     <FontAwesomeIcon icon={faLinkedin} style={{color: "#0b66c2", height:'20px',width:'20px', margin:'auto 0 auto 0'}} size="large" />
                 </button>   
                 <button onClick={() => window.location.href = 'mailto:info@paulsimbulan.com'}>
-                    <img src={gmail} alt="gmail icon" style={{height:'20px',width:'20px', margin:'auto 0 auto 0'}}/>
+                    <img src={gmail} alt="gmail icon"/>
                 </button>
 
                 <button onClick={() => openLink('https://yourwebsite.com/your_resume.pdf')}>
-                    <FontAwesomeIcon icon={faFile} style={{color: "#183153", height:'20px',width:'20px', margin:'10px 0 auto 0'}} size="large" />
-                    <p>RESUME</p>
+                    <img src={resumeicon} alt='RESUME'></img>
                 </button>
             </div>
-            <div className='copyrightRow'>
+            <div className='copyrightRow'>  
                 <p>© {currentYear} Paul Simbulan</p>
             </div>
         </div>

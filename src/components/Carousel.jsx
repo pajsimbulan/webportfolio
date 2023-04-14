@@ -4,9 +4,9 @@ import c from '../assets/c.svg';
 import cplusplus from '../assets/cplusplus.svg';
 import java from '../assets/java.svg';
 import download from '../assets/download.jpg';
+import resumeicon from '../assets/resumeicon.svg';
 
-
-const tempimages = [c, cplusplus, java, download];
+const tempimages = [c, cplusplus, java, download, resumeicon];
 
 
 const Carousel = ({projectName = 'temp'}) => {

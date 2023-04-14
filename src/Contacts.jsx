@@ -5,6 +5,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faFile } from '@fortawesome/free-solid-svg-icons';
 import gmail from './assets/gmail.svg';
 import emailjs from '@emailjs/browser';
+import resumeicon from './assets/resumeicon.svg';
 
 const TO_NAME = 'Paul';
 const REPLY_TO_EMAIL = 'info@paulsimbulan.com';
@@ -129,7 +130,7 @@ function Contacts() {
                     </div>
                     <div className='link-col'>
                         <button onClick={() => openLink('https://yourwebsite.com/your_resume.pdf')}>
-                            <FontAwesomeIcon icon={faFile} style={{color: "#183153", height:'30px',width:'30px', margin:'10px 0 auto 0'}} size="large" />
+                        <img src={resumeicon} alt="resume" style={{height:'30px',width:'30px', margin:'auto 0 auto 0'}}/>
                         </button>
                         <p>Resume</p>
                     </div>
