@@ -23,10 +23,12 @@ import docker from './assets/docker.svg';
 import jest from './assets/jest.svg';
 import npm from './assets/npm.svg';
 import yarn from './assets/yarn.svg';
+import storybook from './assets/storybook.svg';
+import heroku from './assets/heroku.svg';
 
 
 const technologies = ['HTML', 'CSS', 'Javascript', 'Typescript', 'React', 'ExpressJS', 
-'MongoDB', 'Python', 'Java', 'C++', 'C', 'Git', 'Supabase', 'MaterialUI', 'NodeJS', 'Postgresql', 'Figma', 'Expo', 'Vite', 'Docker', 'Jest', 'NPM', 'Yarn'];
+'MongoDB', 'Python', 'Java', 'C++', 'C', 'Git', 'Supabase', 'MaterialUI', 'NodeJS', 'Postgresql', 'Figma', 'Expo', 'Vite', 'Docker', 'Jest', 'Storybook', 'Heroku','NPM', 'Yarn'];
 const techImages = {
     HTML: html,
     CSS: css,
@@ -49,8 +51,10 @@ const techImages = {
     Vite: vite,
     Docker: docker,
     Jest: jest,
+    Storybook: storybook,
+    Heroku: heroku,
     NPM: npm,
-    Yarn: yarn
+    Yarn: yarn,
   };
   
 function About() {
@@ -92,7 +96,7 @@ function About() {
                     </p>
                     <p>
                         From my recent solo project, <span>Mailman</span>, I learned how to fully build a full stack application independently and attempt to innovate a new way to send emails and 
-                        deploy it to the cloud.  I also learned the drawbacks of trying to work alone and the importance of working with a team. My goal for this project is to futher enhance it as I grow and gain more experience in the field.  With the rapid advancements in AI technology, I'm looking to apply that to Mailman to make it more efficient &mdash; to make communication even more seamless and accessible. 
+                        deploy it to the cloud.  I also learned the drawbacks of trying to work alone and the importance of working with a team. My goal for this project is to futher enhance it as I grow and gain more experience in the Software Engineering field.  With the rapid advancements of AI technology, I'm looking to apply that to Mailman to make it more efficient &mdash; to make communication even more seamless and accessible. 
                     </p>
                     <p>
                         My featured project <span>Slugfit</span> is a mobile application that I built with a team of 5 other students.  In that project, I learned to function as a team and how to 

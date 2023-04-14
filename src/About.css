@@ -47,7 +47,7 @@
 .techstacks {
     display: flex;
     flex-direction: row;
-    max-height: 500px;
+    max-height: 300px;
     width: 100%;
     min-width: 300px;
     overflow: auto;
@@ -85,9 +85,10 @@
 }
 
 .rowContainer .line {
-    width: 15%;
+    width: 10%;
     min-width: 150px;
     height: 1px;
-    background-color: grey;
+    background-color: #6b7280;
     border-radius: 10px;
 }
+

@@ -47,6 +47,7 @@
     background-color: #374151;
     color: white;
     border-radius: 10px;
+    
 }
 
 .container-2 h2 {
@@ -58,14 +59,14 @@
 
 textarea {
     resize: none;
-    padding: 10px;
+    padding: 15px;
     background-color: #374151;
     color: white;
     border-radius: 10px;
 }
 
 input {
-    padding: 10px;
+    padding: 15px;
     background-color: #374151;
     color: white;
     border-radius: 10px;
