@@ -8,13 +8,13 @@
 
 @media screen and (max-width: 900px) {
     .contacts {
-        padding: 50px 100px 50px 100px;
+        padding: 50px 100px 80px 100px;
     }
 }
 
 @media screen and (max-width: 600px) {
     .contacts {
-        padding: 50px 50px 50px 50px;
+        padding: 50px 50px 80px 50px;
     }
 }
 
@@ -33,15 +33,16 @@
     width: 100%;
 }
 
+
 .container-2 {
-    width: 500px;
-    min-width: 300px;
+    width: 400px;
     border-radius: 30px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
+
 
 .forms form {  
     display : flex;
@@ -237,4 +238,176 @@ input {
 	100% {
 		stroke-dashoffset: 900;
 	}
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .container-2 {
+        width: 500px;
+        padding: 15px;
+    }
+
+    .contacts h1 {
+        font-size: 35px;
+        margin: 15px;
+    }
+
+    .forms form {  
+        gap: 15px;
+    }
+    
+    .forms p {
+        font-size: 17px;
+    }
+
+    .contactInfo p {
+        font-size: 14px;
+    }
+
+    .link-col p {
+        font-size: 11px;
+    }
+    
+    
+    .container-2 h2 {
+        font-size: 25px;
+        margin: 8px 0 8px 0;
+    }
+    
+    textarea {
+        padding: 12px;
+        font-size: 12.5px;
+    }
+    
+    input {
+        padding: 12px;
+        font-size: 12.5px;
+    }
+    
+    .line {
+        margin: 8px 0 8px 0;
+    }
+    .forms button {
+      font-size: 12.5px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .container {
+        gap: 25px;
+    }
+    
+    .contacts h1 {
+        font-size: 32px;
+        margin: 12px;
+    }
+
+    .container-2 {
+        padding: 10px;
+    }
+
+    .forms form {  
+        gap: 12px;
+    }
+    
+    .forms p {
+        font-size: 14px;
+    }
+    .contactInfo p {
+        font-size: 13px;
+    }
+
+    .link-col p {
+        font-size: 10px;
+    }
+    
+    
+    .container-2 h2 {
+        font-size: 22px;
+        margin: 6px 0 6px 0;
+    }
+    
+    textarea {
+        padding: 10px;
+        font-size: 11.5px;
+    }
+    
+    input {
+        padding: 10px;
+        font-size: 11.5px;
+    }
+
+    .line {
+        margin: 4px 0 4px 0;
+    }
+    .forms button {
+        font-size: 11.5px;
+      }
+    
+}
+
+
+@media screen and (max-width: 600px) {
+   
+    .container {
+        gap: 20px;
+    }
+    .container-2 {
+    width: 100%;
+    padding: 5px;
+    }
+    .contacts h1 {
+        font-size: 28px;
+        margin: 10px;
+    }
+
+    .forms form {  
+        gap: 10px;
+    }
+    
+    .forms p {
+        font-size: 12px;
+    }
+    
+    .contactInfo p {
+        font-size: 11px;
+    }
+
+    .link-col p {
+        font-size: 9px;
+    }
+    
+    .container-2 h2 {
+        font-size: 19px;
+        margin: 4px 0 4px 0;
+    }
+    
+    textarea {
+        padding: 7px;
+        font-size: 10px;
+    }
+    
+    input {
+        padding: 7px;
+        font-size: 10px;
+    }
+    
+    .line {
+        margin: 0px 0 0px 0;
+    }
+    .forms button {
+        font-size: 10px;
+      }
+    
 }

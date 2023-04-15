@@ -98,6 +98,7 @@ function Contacts() {
             </div>
         </div>}
         <h1>Contacts</h1>
+        <br />
         <div className="container">
             <div className="container-2 contactInfo">
                 <h2>Connect with me</h2>
