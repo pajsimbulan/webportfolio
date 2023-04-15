@@ -17,13 +17,23 @@ function Contacts() {
     const [sendingEmail, setSendingEmail] = React.useState(false);
     const [successfulEmail, setSuccessfulEmail] = React.useState(false);
     const [failedEmail, setFailedEmail] = React.useState(false);
+    const [invalidForm, setInvalidForm] = React.useState(false);
     
     const handleSubmit = async (e) => {
         e.preventDefault();
+        if(nameRef.current.value === '' || emailRef.current.value === '' || messageRef.current.value === '') {
+            setInvalidForm(true);
+            setTimeout(() => {
+                setInvalidForm(false);
+            }, 2000);
+            nameRef.current.value = '';
+            emailRef.current.value = '';
+            messageRef.current.value = '';
+            return;
+        }
         console.log(`Name: ${nameRef.current.value}`);  
         console.log(`Email: ${emailRef.current.value}`);
         console.log(`Message: ${messageRef.current.value}`);
-        console.log(`sending email ${nameRef.current.value} - <${emailRef.current.value}> with message ${messageRef.current.value}`);
         setSendingEmail(true);
         let status = '';
         await emailjs.send('service_8sarxo8', 'contact_form', {
@@ -95,6 +105,18 @@ function Contacts() {
                 </svg>
                 <p style={{fontWeight:'bold'}}>Automated Message Failed to Send!</p>
                 <p style={{color:'#6b7280'}}>Sorry for the Inconvenice.  Please reach out to me through email directly for the meantime.</p>
+            </div>
+        </div>}
+        {invalidForm &&
+        <div className="modalAlert" data-backdrop="static">
+            <div className='modalFailureContents'>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+                    <circle class="path circle" fill="none" stroke="#db3646" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1" /> 
+                    <line class="path line" fill="none" stroke="#db3646" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" x1="34.4" y1="37.9" x2="95.8" y2="92.3" />
+                    <line class="path line" fill="none" stroke="#db3646" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" x1="95.8" y1="38" X2="34.4" y2="92.2" /> 
+                </svg>
+                <p style={{fontWeight:'bold'}}>Message Failed to Send!</p>
+                <p style={{color:'#6b7280'}}>Please make sure to fill all forms before submitting</p>
             </div>
         </div>}
         <h1>Contacts</h1>
