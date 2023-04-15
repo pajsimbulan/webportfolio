@@ -18,6 +18,7 @@ function App() {
       <Navbar openModal={() => setOpenModal(true)} />
       <Home />
       <About />
+      <Projects />
       <Contacts />
       <Footer />
     </div>

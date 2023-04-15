@@ -19,7 +19,6 @@
     }
 }
 
-
 .aboutTextContainer {
     display: flex;
     flex-direction: column;
@@ -37,7 +36,7 @@
 
 .aboutTextContainer p {
     color: #6b7280;
-}
+}   
 
 .rowContainer {
     display: flex;

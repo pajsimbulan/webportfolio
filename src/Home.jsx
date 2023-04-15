@@ -12,9 +12,6 @@ function Home() {
                     <img src={logo} alt="ps logo" />
                     <div className='homeText'>
                         <h1>Hi, I'm Paul
-                            <span className="wave">  
-                                &#128075;
-                            </span>
                         </h1>
                         <p>I'm a <span style={{fontWeight:'bold'}}> Software Engineer.</span></p>
                         <p className="p1">Come get to know <span><a href="#about">me</a></span> and see my <span><a href="#projects">work</a></span> <a href='#about'><FontAwesomeIcon icon={faArrowDown} style={{margin:'auto 0 auto 10px'}}/></a></p>

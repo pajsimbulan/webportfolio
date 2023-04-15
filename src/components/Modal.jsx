@@ -29,10 +29,10 @@ const Modal = ({ closeModal }) => {
             <FontAwesomeIcon icon={faXmark} size='xl' style={{height:'30px', width:'30px'}}/>
           </button>
         </div>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contacts">Contact</a>
+        <a href="#home" onClick={() => {closeModal();}}>Home</a>
+        <a href="#about" onClick={() => {closeModal();}}>About</a>
+        <a href="#projects" onClick={() => {closeModal();}}>Projects</a>
+        <a href="#contacts" onClick={() => {closeModal();}}>Contact</a>
       </div>
     </div>
   );
