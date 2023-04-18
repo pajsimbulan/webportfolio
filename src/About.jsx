@@ -25,10 +25,12 @@ import npm from './assets/npm.svg';
 import yarn from './assets/yarn.svg';
 import storybook from './assets/storybook.svg';
 import heroku from './assets/heroku.svg';
+import linux from './assets/linux.svg';
+import tailwindcss from './assets/tailwindcss.svg';
+import hostinger from './assets/hostinger.svg';
 
-
-const technologies = ['HTML', 'CSS', 'Javascript', 'Typescript', 'React', 'ExpressJS', 
-'MongoDB', 'Python', 'Java', 'C++', 'C', 'Git', 'Supabase', 'MaterialUI', 'NodeJS', 'Postgresql', 'Figma', 'Expo', 'Vite', 'Docker', 'Jest', 'Storybook', 'Heroku','NPM', 'Yarn'];
+const technologies = ['HTML', 'CSS', 'Javascript', 'Typescript', 'React','TailwindCSS', 'ExpressJS', 
+'MongoDB', 'Python', 'Java', 'C++', 'C', 'Git', 'Supabase', 'MaterialUI', 'NodeJS', 'Postgresql', 'Linux','Figma', 'Expo', 'Vite', 'Docker', 'Jest', 'Storybook', 'Heroku','Hostinger','NPM', 'Yarn'];
 const techImages = {
     HTML: html,
     CSS: css,
@@ -55,6 +57,9 @@ const techImages = {
     Heroku: heroku,
     NPM: npm,
     Yarn: yarn,
+    Linux: linux,
+    TailwindCSS: tailwindcss,
+    Hostinger: hostinger,
   };
   
 function About() {

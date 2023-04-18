@@ -94,9 +94,9 @@ const slugfitFiles = {
   "Workouts": slugfitWorkouts,
 }
 
-const websiteDescriptions = ["paulsimbulan.com"];
+const websiteDescriptions = ["Home Page"];
 const websiteFiles = {
-  "paulsimbulan.com": website,
+  "Home Page": website,
 }
 
 
