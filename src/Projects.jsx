@@ -21,7 +21,7 @@ function Projects() {
             </div>
             <div className="projectContainer p3"> 
                 <div className="projectImage">
-                    <Carousel projectName='server'/>
+                    <Carousel projectName='httpserver'/>
                 </div>
                 <div className="projectText">
                 </div>
@@ -31,6 +31,13 @@ function Projects() {
                 </div>
                 <div className="projectImage">
                     <Carousel projectName='huffman'/>
+                </div>
+            </div>
+            <div className="projectContainer p5"> 
+                <div className="projectImage">
+                    <Carousel projectName='website'/>
+                </div>
+                <div className="projectText">
                 </div>
             </div>
             

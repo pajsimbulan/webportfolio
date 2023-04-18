@@ -32,7 +32,7 @@
    
 }
 
-.p1, .p3 {
+.p1, .p3, .p5 {
     flex-wrap: wrap;
 }
 
@@ -41,18 +41,18 @@
 }
 
 .projectImage, .projectText {
-    width: 500px;
+    width: 600px;
     min-width: 300px;
     border-radius: 30px;
     padding: 20px;
-    height: 400px;
+    height: 500px;
 }
 
-.p1 .projectImage, .p2 .projectText, .p3 .projectImage, .p4 .projectText {
+.p1 .projectImage, .p2 .projectText, .p3 .projectImage, .p4 .projectText, .p5 .projectImage {
     border-radius: 30px 0 0 30px;
 }
 
-.p1 .projectText, .p2 .projectImage, .p3 .projectText, .p4 .projectImage {
+.p1 .projectText, .p2 .projectImage, .p3 .projectText, .p4 .projectImage, .p5 .projectText {
     border-radius: 0 30px 30px 0;
 }
 
