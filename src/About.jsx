@@ -69,7 +69,7 @@ function About() {
                 <div className="aboutTextContainer">
                     <h1>About</h1>
                     <p>
-                        I am a <span>Software Engineer</span> based in Bay Area, California.  I have worked with Full-Stack Web Applications, Mobile Applications, and now I am currently setting my 
+                        I am a <span>Software Engineer</span> based in Bay Area, California.  I have worked with Full-Stack Web Applications, Mobile Applications, Low-level languages, and now I am currently setting my 
                         sights on Artificial Intelligence and Rust.  
                     </p>
                     <p>
