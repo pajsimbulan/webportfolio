@@ -57,9 +57,12 @@ img {
 }
 
 .home a {
+    font-size: 20px;
+}
+
+.home .arrow {
     transition: none;
     background-image: none  ;
-    font-size: 20px;
 }
 
 .home a:hover {
