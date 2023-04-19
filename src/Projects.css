@@ -29,6 +29,7 @@
 .projectContainer {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
    
 }
 
@@ -134,4 +135,23 @@
     flex-wrap: wrap;
     gap: 5px;
 
+}
+
+.modalVideoContents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    font-size: 15px;
+}
+
+.modalVideoContents video {
+    width: 60vw;
+    height: 50vw;
+}
+
+.modalVideoContents p a {
+    font-size: 15px;
 }
