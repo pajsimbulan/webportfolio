@@ -45,7 +45,7 @@ function Projects() {
                             <source src={demoVideo} type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
-                        <p>Video not loading?  Watch it with this link: <a href='https://youtu.be/2OFljDC_c74'>https://youtu.be/2OFljDC_c74</a></p>
+                        <p>Video not loading?  Watch it with this link: <a href='https://youtu.be/2OFljDC_c74' target="_blank">https://youtu.be/2OFljDC_c74</a></p>
                     </div>
             </div>}
             <h1>Projects</h1>
