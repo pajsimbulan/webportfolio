@@ -76,9 +76,16 @@ function Projects() {
                     <div className="chip">Heroku <img src={heroku}></img></div>
                     </div>
                     <br />
+                    <div style={{display:'flex', flexDirection:'column', flexGrow:1}}/>
                     <button className="button3" onClick={() => {}}>Live Site</button>
+                    <div className='row' style={{justifyContent:'space-between'}}>
+                        <div style={{width:'48%'}}>
                     <button onClick={() => {openLink('https://github.com/pajsimbulan/MailMan')}}>Github</button>
+                        </div>
+                        <div style={{width:'48%'}}>     
                     <button className="button2" onClick={() => {}}>Demo Video</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="projectContainer p2"> 
@@ -104,6 +111,7 @@ function Projects() {
                     <div className="chip">Github<img src={git}></img></div>
                     </div>
                     <br />
+                    <div style={{display:'flex', flexDirection:'column', flexGrow:1}}/>
                     <button onClick={() => {openLink('https://github.com/pajsimbulan/SlugFit')}}>Github</button>
                     <button className="button2" onClick={() => {setOpenVideoModal(true)}}>Demo Video</button>
                 </div>
@@ -122,6 +130,7 @@ function Projects() {
                     <p>The HTTP server supports both single-threaded and multi-threaded models to handle incoming client connections and serve HTTP requests. It employs mutex lock with conditions on a queue to provide a thread-safe environment.</p>
                     <p>Key features of this server include support for the <span>GET</span>, <span>PUT</span>, and <span>HEAD</span> HTTP methods, ensuring a flexible and responsive interaction with clients.</p>
                     <br />
+                    <div style={{display:'flex', flexDirection:'column', flexGrow:1}}/>
                     <div className='row'>
                         <h3>Technologies Used: </h3>
                     </div>
@@ -150,6 +159,7 @@ function Projects() {
                         <div className="chip">Linux <img src={linux}></img></div>
                     </div>
                     <br />
+                    <div style={{display:'flex', flexDirection:'column', flexGrow:1}}/>
                     <button onClick={() => {openLink('https://github.com/pajsimbulan/huffman')}}>Github</button>
                 </div>
                 
@@ -178,6 +188,7 @@ function Projects() {
                         <div className="chip">Hostinger <img src={hostinger}></img></div>
                     </div>
                     <br />
+                    <div style={{display:'flex', flexDirection:'column', flexGrow:1}}/>
                     <button onClick={() => {openLink('https://github.com/pajsimbulan/webportfolio')}}>Github</button>
                 </div>
             </div>
