@@ -40,20 +40,21 @@ import slugfitStartWorkoutList from '../assets/slugfit/start_workout_list.PNG';
 import slugfitWorkoutAnalytics from '../assets/slugfit/workout_analytics.PNG';
 import slugfitWorkoutSummary from '../assets/slugfit/workout_summary.PNG';
 import slugfitWorkouts from '../assets/slugfit/workouts.PNG';
+import slugfitFigma from '../assets/slugfit/figma_design.jpg';
 
 import website from '../assets/website/website_portfolio.jpg';
 
-const huffmanDescriptions = ["Intro", "Encoding help", "Decoding help", "Result"];
+const huffmanDescriptions = ["About", "Encoding help", "Decoding help", "Result"];
 const huffmanFiles = {
-  "Intro": huffmanIntro,
+  "About": huffmanIntro,
   "Encoding help": huffmanEncodingHelp,
   "Decoding help": huffmanDecodingHelp,
   "Result": huffmanResult,
 }
 
-const httpserverDescriptions = ["Intro", "Listening", "Single thread test", "Multi thread test", "Multi thread test 2", "Multi thread log"];
+const httpserverDescriptions = ["About", "Listening", "Single thread test", "Multi thread test", "Multi thread test 2", "Multi thread log"];
 const httpserverFiles = {
-  "Intro": httpserverIntro,
+  "About": httpserverIntro,
   "Listening": httpserverListening,
   "Single thread test": httpserverSingle,
   "Multi thread test": httpserverMulti,
@@ -61,13 +62,9 @@ const httpserverFiles = {
   "Multi thread log": httpserverMultiLog,
 }
 
-const slugfitDescriptions2 = ["Completed Workouts Calendar", "Drawer Navigation", "Editing an Exercise", "Edit Exercise Options", 
-"Searching for Exercise", "Home", "Intro", "Profile Settings", "Profile View", "Create Account", "Search Filter", "Sign In", "Sign Out", 
-"Friend's Post Options", "Searching friends", "Social Media", "Start Workout", "Exercise Cards", "Cards List View", "Workout Analytics", "Workout Summary", "Workouts"];
-
-const slugfitDescriptions = ["Intro", "Sign In", "Create Account", "Home", "Drawer Navigation", "Workouts", "Searching for /Adding an Exercise", "Search Filter", "Editing an Exercise", 
+const slugfitDescriptions = ["Banner", "Sign In", "Create Account", "Home", "Drawer Navigation", "Workouts", "Searching for /Adding an Exercise", "Search Filter", "Editing an Exercise", 
 "Edit Exercise Options", "Start Workout", "Exercise Cards", "Cards List View", "Workout Summary", "Completed Workouts Calendar", "Profile View", "Profile Settings", "Workout Analytics",
-"Social Media", "Friend's Post Options", "Searching friends", "Sign Out"];
+"Social Media", "Friend's Post Options", "Searching friends", "Sign Out", "Figma Design"];
 
 const slugfitFiles = {
   "Completed Workouts Calendar": slugfitCalendar,
@@ -76,7 +73,7 @@ const slugfitFiles = {
   "Edit Exercise Options": slugfitExerciseOptions,
   "Searching for /Adding an Exercise": slugfitSearchBar,
   "Home": slugfitHome,
-  "Intro": slugfitIntro,
+  "Banner": slugfitIntro,
   "Profile Settings": slugfitProfileSettings,
   "Profile View": slugfitProfileView,
   "Create Account": slugfitRegister,
@@ -92,6 +89,7 @@ const slugfitFiles = {
   "Workout Analytics": slugfitWorkoutAnalytics,
   "Workout Summary": slugfitWorkoutSummary,
   "Workouts": slugfitWorkouts,
+  "Figma Design": slugfitFigma,
 }
 
 const websiteDescriptions = ["Home Page"];
