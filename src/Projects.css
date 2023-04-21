@@ -67,6 +67,7 @@
 
 
 
+
 .projectText h2 {
  color:#2997ff;
  font-size: 25px;
@@ -254,6 +255,7 @@
 .chip img {
     width: 16px;
     height: 14px;
+    margin: auto 0 auto 0;
 }
 
 .projects button {
@@ -275,9 +277,11 @@
 @media screen and (max-width: 700px) {
     .projectImage, .projectText {
         width: 450px;
-        height: 350px;
+    /*    height: 350px;*/
     }
-
+    .projectText {
+        height: auto;
+    }
     .p1 .projectText, .p2 .projectText, .p3 .projectText, .p4 .projectText, .p5 .projectText  {
         border-radius: 21px 21px 0 0;
        
@@ -293,9 +297,11 @@
 @media screen and (max-width: 600px) {
     .projectImage, .projectText {
         width: 400px;
-        height: 350px;
+       height: 350px;
     }
-
+    .projectText {
+        height: auto;
+    }
     .projects h1 {
         font-size: 28px;
         margin: 10px;
@@ -342,9 +348,11 @@
 @media screen and (max-width: 500px) {
     .projectImage, .projectText {
         width: 350px;
-        height: 280px;
+        /*height: 280px;*/
     }
-
+    .projectText {
+        height: auto;
+    }
     .p1 .projectText, .p2 .projectText, .p3 .projectText, .p4 .projectText, .p5 .projectText  {
         border-radius: 17px 17px 0 0;
        
@@ -358,7 +366,10 @@
 @media screen and (max-width: 420px) {
     .projectImage, .projectText {
         width: 300px;
-        height: 260px;
+        /*height: 260px;*/
+    }
+    .projectText {
+        height: auto;
     }
 }
 

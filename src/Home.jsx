@@ -15,6 +15,8 @@ function Home() {
                         </h1>
                         <p>I'm a <span style={{fontWeight:'bold'}}> Software Engineer.</span></p>
                         <p className="p1">Come get to know <span><a href="#about">me</a></span> and see my <span><a href="#projects">work</a></span> <a className="arrow" href='#about'><FontAwesomeIcon icon={faArrowDown} style={{margin:'auto 0 auto 10px', transition:'none', backgroundImage:'none'}}/></a></p>
+                        <br />
+                        <p style={{color:'red', fontWeight:'bold'}}>**TEST RUN.    Resume, Linkedin, and Mailman Project still to be added**</p>
                     </div>
                 </div>
             </div>

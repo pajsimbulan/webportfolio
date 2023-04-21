@@ -174,7 +174,7 @@ function Projects() {
                 <div className="projectText">
                     <h2 className="projectTitle" style={{color:'black'}}>Website Portfolio</h2>
                     <h3 className='projectSubTitle'> paulsimbulan.com</h3>
-                    <p>A personal website portfolio I developed to showcase my work and a little about myself as a Software Engineer.  The website provides an overview of the various projects I've worked on, demonstrating my continuous learning and growth in the field</p>
+                    <p>A personal website portfolio I developed to showcase my work and a little about myself as a Software Engineer.  The website provides an overview of the various projects I've worked on.</p>
                     <br />
                     <div className='row'>
                         <h3>Technologies Used: </h3>

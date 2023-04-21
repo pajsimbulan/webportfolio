@@ -140,7 +140,7 @@ function Contacts() {
                         <p>Github</p>
                     </div>
                     <div className='link-col'>
-                        <button onClick={() => openLink('https://www.linkedin.com/in/pauljsimbulan/')}>
+                        <button onClick={() => console.log("openLink('https://www.linkedin.com/in/pauljsimbulan/')")}>
                             <FontAwesomeIcon icon={faLinkedin} style={{color: "#0b66c2", height:'30px',width:'30px', margin:'auto 0 auto 0'}} size="large" />
                         </button>   
                         <p>Linkedin</p>
@@ -152,7 +152,7 @@ function Contacts() {
                         <p>Email</p>
                     </div>
                     <div className='link-col'>
-                        <button onClick={() => openLink('https://yourwebsite.com/your_resume.pdf')}>
+                        <button onClick={() => console.log("openLink('https://yourwebsite.com/your_resume.pdf')")}>
                         <img src={resumeicon} alt="resume" style={{height:'30px',width:'30px', margin:'auto 0 auto 0'}}/>
                         </button>
                         <p>Resume</p>
