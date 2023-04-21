@@ -55,8 +55,8 @@ function Projects() {
                 </div>
                 <div className="projectText">
                     <h2 className="projectTitle">Mailman</h2>
-                    <h3 className='projectSubTitle'> To be filled</h3>
-                    <p> To be filled </p>
+                    <h3 className='projectSubTitle' style ={{color:'red'}}> In Progress</h3>
+                    <p style ={{color:'red'}}> In Progress </p>
                     <br />
                     <div className='row'>
                         <h3>Technologies Used: </h3>

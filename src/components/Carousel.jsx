@@ -6,6 +6,13 @@ import java from '../assets/java.svg';
 import download from '../assets/download.jpg';
 import resumeicon from '../assets/resumeicon.svg';
 
+import mailmanIntro from '../assets/mailman/in_progress.jpg';
+import mailmanAccountCreationSuccessful from '../assets/mailman/AccountCreationSuccessful.jpg';
+import mailmanForgotPassword from '../assets/mailman/ForgotPassword.jpg';
+import mailmanSignIn from '../assets/mailman/Signinpage.jpg';
+import mailmanSignUp from '../assets/mailman/Signuppage.jpg';
+import mailmanProfile from '../assets/mailman/Profilepage.jpg';
+
 import huffmanIntro from '../assets/huffman/huffman_intro.jpg';
 import huffmanEncodingHelp from '../assets/huffman/huffman_encoding_help.jpg';
 import huffmanDecodingHelp from '../assets/huffman/huffman_decoding_help.jpg';
@@ -43,6 +50,16 @@ import slugfitWorkouts from '../assets/slugfit/workouts.PNG';
 import slugfitFigma from '../assets/slugfit/figma_design.jpg';
 
 import website from '../assets/website/website_portfolio.jpg';
+
+const mailmanDescriptions = ["In Progress", "Sign In", "Sign Up", "Account Creation Successful", "Forgot Password", "Profile"];
+const mailmanFiles = {
+    "In Progress": mailmanIntro,
+    "Sign In": mailmanSignIn,
+    "Sign Up": mailmanSignUp,
+    "Account Creation Successful": mailmanAccountCreationSuccessful,
+    "Forgot Password": mailmanForgotPassword,
+    "Profile": mailmanProfile,
+}
 
 const huffmanDescriptions = ["About", "Encoding help", "Decoding help", "Result"];
 const huffmanFiles = {
@@ -101,12 +118,14 @@ const websiteFiles = {
 
 const getFiles = (projectName) => {
     switch(projectName) {
-        case "huffman":
-            return huffmanFiles;
-        case "httpserver":
-            return httpserverFiles;
+        case "mailman":
+            return mailmanFiles;
         case "slugfit":
             return slugfitFiles;
+        case "httpserver":
+            return httpserverFiles;
+        case "huffman":
+            return huffmanFiles;
         case "website":
             return websiteFiles;
         default:
@@ -115,12 +134,14 @@ const getFiles = (projectName) => {
 }
 const getDescriptions = (projectName) => {
     switch(projectName) {
-        case "huffman":
-            return huffmanDescriptions;
-        case "httpserver":
-            return httpserverDescriptions;
+        case "mailman":
+            return mailmanDescriptions;
         case "slugfit":
             return slugfitDescriptions;
+        case "httpserver":
+            return httpserverDescriptions;
+        case "huffman":
+            return huffmanDescriptions;
         case "website":
             return websiteDescriptions;
         default:

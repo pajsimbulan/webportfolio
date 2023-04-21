@@ -65,9 +65,12 @@
     overflow: auto;
 }
 
+
+
 .projectText h2 {
  color:#2997ff;
  font-size: 25px;
+ text-align: center;
 } 
 
 .projectText h3 {
