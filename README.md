@@ -1,7 +1,7 @@
 # Website Portfolio
 ## paulsimbulan.com
 
-This repository contains the source code for my personal website portfolio.  The website provides an overview of the various projects I've worked on, demonstrating my continuous learning and growth in the field.
+This repository contains the source code for my personal website portfolio.  The website provides an overview of the various projects I've worked on.
 
 ## Technologies
  - HTML
