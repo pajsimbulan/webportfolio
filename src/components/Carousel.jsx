@@ -1,17 +1,67 @@
 import * as React from 'react';
 import './Carousel.css';
-import c from '../assets/c.svg';
-import cplusplus from '../assets/cplusplus.svg';
-import java from '../assets/java.svg';
-import download from '../assets/download.jpg';
-import resumeicon from '../assets/resumeicon.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMobileScreenButton, faLaptop } from '@fortawesome/free-solid-svg-icons';
 
-import mailmanIntro from '../assets/mailman/in_progress.jpg';
-import mailmanAccountCreationSuccessful from '../assets/mailman/AccountCreationSuccessful.jpg';
-import mailmanForgotPassword from '../assets/mailman/ForgotPassword.jpg';
-import mailmanSignIn from '../assets/mailman/Signinpage.jpg';
-import mailmanSignUp from '../assets/mailman/Signuppage.jpg';
-import mailmanProfile from '../assets/mailman/Profilepage.jpg';
+import mailmanPCEmailToolbar from '../assets/mailman/pc/body_settings.jpg';
+import mailmanPCChangeProfilePicture from '../assets/mailman/pc/change_profile_picture.jpg';
+import mailmanPCCompose from '../assets/mailman/pc/compose_with_images_files.jpg';
+import mailmanPCCreateAccount from '../assets/mailman/pc/create_account.png';
+import mailmanPCEditBirthdateInvalid from '../assets/mailman/pc/edit_birthdate_invalid.jpg';
+import mailmanPCEditFirstName from '../assets/mailman/pc/edit_firstname.jpg';
+import mailmanPCEditLastName from '../assets/mailman/pc/edit_lastname.jpg';
+import mailmanPCEditPassword from '../assets/mailman/pc/edit_password.jpg';
+import mailmanPCEditGender from '../assets/mailman/pc/edit_gender.jpg';
+import mailmanPCEmailContents from '../assets/mailman/pc/email_content.jpg';
+import mailmanPCEmailContents2 from '../assets/mailman/pc/email_content_2.jpg';
+import mailmanPCErrorMessage from '../assets/mailman/pc/error_message.jpg';
+import mailmanPCErrorPage from '../assets/mailman/pc/error_page.png';
+import mailmanPCForgotPassword from '../assets/mailman/pc/forgot_password.png';
+import mailmanPCGreeting from '../assets/mailman/pc/greeting.png';
+import mailmanPCHome from '../assets/mailman/pc/home.jpg';
+import mailmanPCLoading from '../assets/mailman/pc/loading_fetching.png';
+import mailmanPCMailBody from '../assets/mailman/pc/mailbody.jpg';
+import mailmanPCNavbar from '../assets/mailman/pc/mailman_navbar.jpg';
+import mailmanPCProfileMenu from '../assets/mailman/pc/manage_profile_menu.jpg';
+import mailmanPCNoEmails from '../assets/mailman/pc/no_emails_today.jpg';
+import mailmanPCPasswordChanged from '../assets/mailman/pc/password_changed.jpg';
+import mailmanPCProfile from '../assets/mailman/pc/profile.jpg';
+import mailmanPCReply from '../assets/mailman/pc/reply.jpg';
+import mailmanPCRow from '../assets/mailman/pc/row_settings.png';
+import mailmanPCSearch from '../assets/mailman/pc/search_result.jpg';
+import mailmanPCSignIn from '../assets/mailman/pc/signin.png';
+import mailmanPCSuccess from '../assets/mailman/pc/success_notification.jpg'; 
+
+import mailmanMobileEmailToolbar from '../assets/mailman/mobile/body_settings.jpg'
+import mailmanMobileChangePassword from '../assets/mailman/mobile/change_password.jpg'
+import mailmanMobileComposeEmail from '../assets/mailman/mobile/compose_email.jpg'
+import mailmanMobileComposeEmail2 from '../assets/mailman/mobile/compose_email_2.jpg'
+import mailmanMobileCreateAccount from '../assets/mailman/mobile/create_account.jpg'
+import mailmanMobileEditBirthdateInvalid from '../assets/mailman/mobile/edit_birthdate_invalid.jpg'
+import mailmanMobileEditBirthdate from '../assets/mailman/mobile/edit_birthdate.jpg'
+import mailmanMobileEditFirstName from '../assets/mailman/mobile/edit_first_name.jpg'
+import mailmanMobileEditGender from '../assets/mailman/mobile/edit_gender.jpg'
+import mailmanMobileEditLastName from '../assets/mailman/mobile/edit_last_name.jpg'
+import mailmanMobileEditProfilePicture from '../assets/mailman/mobile/edit_profile_picture.jpg'
+import mailmanMobileEmailContents from '../assets/mailman/mobile/email_contents_1.jpg'
+import mailmanMobileEmailContents2 from '../assets/mailman/mobile/email_contents_2.jpg'
+import mailmanMobileErrorPage from '../assets/mailman/mobile/error_page.jpg'
+import mailmanMobileForgotPassword from '../assets/mailman/mobile/forgot_password.jpg'
+import mailmanMobileGreet from '../assets/mailman/mobile/greet.png'
+import mailmanMobileHome from '../assets/mailman/mobile/home.jpg'
+import mailmanMobileLoading from '../assets/mailman/mobile/loading_modal.png'
+import mailmanMobileMailBody from '../assets/mailman/mobile/mail_body.jpg'
+import mailmanMobileNavbar from '../assets/mailman/mobile/navbar.jpg'
+import mailmanMobileNoEmails from '../assets/mailman/mobile/no_emails.jpg'
+import mailmanMobilePasswordChanged from '../assets/mailman/mobile/password_changed.jpg'
+import mailmanMobileProfileMenu from '../assets/mailman/mobile/profile_menu.jpg'
+import mailmanMobileProfile from '../assets/mailman/mobile/profile_page_1.jpg'
+import mailmanMobileProfile2 from '../assets/mailman/mobile/profile_page_2.jpg'
+import mailmanMobileReply from '../assets/mailman/mobile/reply.jpg'
+import mailmanMobileRows from '../assets/mailman/mobile/rows.jpg'
+import mailmanMobileSearch from '../assets/mailman/mobile/search.jpg'
+import mailmanMobileSignIn from '../assets/mailman/mobile/signin.jpg'
+
 
 import huffmanIntro from '../assets/huffman/huffman_intro.jpg';
 import huffmanEncodingHelp from '../assets/huffman/huffman_encoding_help.jpg';
@@ -47,19 +97,83 @@ import slugfitStartWorkoutList from '../assets/slugfit/start_workout_list.PNG';
 import slugfitWorkoutAnalytics from '../assets/slugfit/workout_analytics.PNG';
 import slugfitWorkoutSummary from '../assets/slugfit/workout_summary.PNG';
 import slugfitWorkouts from '../assets/slugfit/workouts.PNG';
+import slugfitArchitecture from '../assets/slugfit/slugfit_architecture.jpg';
 import slugfitFigma from '../assets/slugfit/figma_design.jpg';
 
 import website from '../assets/website/website_portfolio.jpg';
 
-const mailmanDescriptions = ["In Progress", "Sign In", "Sign Up", "Account Creation Successful", "Forgot Password", "Profile"];
-const mailmanFiles = {
-    "In Progress": mailmanIntro,
-    "Sign In": mailmanSignIn,
-    "Sign Up": mailmanSignUp,
-    "Account Creation Successful": mailmanAccountCreationSuccessful,
-    "Forgot Password": mailmanForgotPassword,
-    "Profile": mailmanProfile,
+const mailmanPCDescriptions = ["Sign In", "Error Message", "Create Account", "Forgot Password", "Password Changed" , "Greeting", 
+    "Loading", "Home", "Navigation Bar", "Emails","Email Toolbar","Row Settings",
+    "Empty Inbox", "Profile Menu","Searching Emails", "Composing an Email", "Success Alerts", "Email Contents", "Email Contents Cont'd","Replying",
+    "Profile", "Change Profile Picture", "Editing First Name", "Editing Last Name", "Changing Password", 
+    "Editing Gender", "Editing Birth Date (Invalid)", "Error Page"]  
+const mailmanPCFiles = {
+    "Sign In": mailmanPCSignIn,
+    "Error Message": mailmanPCErrorMessage,
+    "Create Account": mailmanPCCreateAccount,
+    "Forgot Password": mailmanPCForgotPassword,
+    "Password Changed": mailmanPCPasswordChanged,
+    "Greeting": mailmanPCGreeting,
+    "Loading": mailmanPCLoading,
+    "Home": mailmanPCHome,
+    "Navigation Bar": mailmanPCNavbar,
+    "Emails": mailmanPCMailBody,
+    "Email Toolbar": mailmanPCEmailToolbar,
+    "Row Settings": mailmanPCRow,
+    "Empty Inbox": mailmanPCNoEmails,
+    "Profile Menu": mailmanPCProfileMenu,
+    "Searching Emails": mailmanPCSearch,
+    "Composing an Email": mailmanPCCompose,
+    "Success Alerts": mailmanPCSuccess,
+    "Email Contents": mailmanPCEmailContents,
+    "Email Contents Cont'd": mailmanPCEmailContents2,
+    "Replying": mailmanPCReply,
+    "Profile": mailmanPCProfile,
+    "Change Profile Picture": mailmanPCChangeProfilePicture,
+    "Editing First Name": mailmanPCEditFirstName,
+    "Editing Last Name": mailmanPCEditLastName,
+    "Changing Password": mailmanPCEditPassword,
+    "Editing Gender": mailmanPCEditGender,
+    "Editing Birth Date (Invalid)": mailmanPCEditBirthdateInvalid, 
+    "Error Page": mailmanPCErrorPage,
 }
+const mailmanMobileDescriptions = ["Sign In", "Create Account", "Forgot Password", "Password Changed" , "Greeting", 
+"Loading", "Home", "Navigation Bar", "Emails","Email Toolbar","Row Settings",
+"Empty Inbox", "Profile Menu","Searching Emails", "Composing an Email (empty)", "Composing an Email","Email Contents", "Email Contents Cont'd","Replying",
+"Profile","Profile Cont'd", "Change Profile Picture", "Editing First Name", "Editing Last Name", "Changing Password", 
+"Editing Gender", "Editing Birth Date", "Editing Birth Date (Invalid)", "Error Page"]
+const mailmanMobileFiles = {
+"Sign In": mailmanMobileSignIn,
+"Create Account": mailmanMobileCreateAccount,
+"Forgot Password": mailmanMobileForgotPassword,
+"Password Changed": mailmanMobilePasswordChanged,
+"Greeting": mailmanMobileGreet,
+"Loading": mailmanMobileLoading,
+"Home": mailmanMobileHome,
+"Navigation Bar": mailmanMobileNavbar,
+"Emails": mailmanMobileMailBody,
+"Email Toolbar": mailmanMobileEmailToolbar,
+"Row Settings": mailmanMobileRows,
+"Empty Inbox": mailmanMobileNoEmails,
+"Profile Menu": mailmanMobileProfileMenu,
+"Searching Emails": mailmanMobileSearch,
+"Composing an Email (empty)": mailmanMobileComposeEmail,
+"Composing an Email": mailmanMobileComposeEmail2,
+"Email Contents": mailmanMobileEmailContents,
+"Email Contents Cont'd": mailmanMobileEmailContents2,
+"Replying": mailmanMobileReply,
+"Profile": mailmanMobileProfile,
+"Profile Cont'd": mailmanMobileProfile2,
+"Change Profile Picture": mailmanMobileEditProfilePicture,
+"Editing First Name": mailmanMobileEditFirstName,
+"Editing Last Name": mailmanMobileEditLastName,
+"Changing Password": mailmanMobileChangePassword,
+"Editing Gender": mailmanMobileEditGender,
+"Editing Birth Date": mailmanMobileEditBirthdate,
+"Editing Birth Date (Invalid)": mailmanMobileEditBirthdateInvalid,
+"Error Page": mailmanMobileErrorPage,
+}
+
 
 const huffmanDescriptions = ["About", "Encoding help", "Decoding help", "Result"];
 const huffmanFiles = {
@@ -81,7 +195,7 @@ const httpserverFiles = {
 
 const slugfitDescriptions = ["Banner", "Sign In", "Create Account", "Home", "Drawer Navigation", "Workouts", "Searching for /Adding an Exercise", "Search Filter", "Editing an Exercise", 
 "Edit Exercise Options", "Start Workout", "Exercise Cards", "Cards List View", "Workout Summary", "Completed Workouts Calendar", "Profile View", "Profile Settings", "Workout Analytics",
-"Social Media", "Friend's Post Options", "Searching friends", "Sign Out", "Figma Design"];
+"Social Media", "Friend's Post Options", "Searching friends", "Sign Out","Architecture", "Figma Design"];
 
 const slugfitFiles = {
   "Completed Workouts Calendar": slugfitCalendar,
@@ -106,6 +220,7 @@ const slugfitFiles = {
   "Workout Analytics": slugfitWorkoutAnalytics,
   "Workout Summary": slugfitWorkoutSummary,
   "Workouts": slugfitWorkouts,
+  "Architecture": slugfitArchitecture,
   "Figma Design": slugfitFigma,
 }
 
@@ -118,8 +233,10 @@ const websiteFiles = {
 
 const getFiles = (projectName) => {
     switch(projectName) {
-        case "mailman":
-            return mailmanFiles;
+        case "mailmanPC":
+            return mailmanPCFiles;
+        case "mailmanMobile":
+            return mailmanMobileFiles;
         case "slugfit":
             return slugfitFiles;
         case "httpserver":
@@ -134,8 +251,10 @@ const getFiles = (projectName) => {
 }
 const getDescriptions = (projectName) => {
     switch(projectName) {
-        case "mailman":
-            return mailmanDescriptions;
+        case "mailmanPC":
+            return mailmanPCDescriptions;
+        case "mailmanMobile":
+            return mailmanMobileDescriptions;
         case "slugfit":
             return slugfitDescriptions;
         case "httpserver":
@@ -150,11 +269,30 @@ const getDescriptions = (projectName) => {
 }
 
 
-const Carousel = ({projectName = 'huffman'}) => {
+const Carousel = ({projectName}) => { 
+    const [mobile, setMobileView] = React.useState(false);
+    const [files, setFiles] = React.useState(
+        () => {
+            if(projectName === 'mailman') {
+                return getFiles(`${projectName}${(mobile)? 'Mobile':'PC'}`);
+            }
+            else {
+                return getFiles(projectName);
+            }
+        }
+        );
+        const [descriptions, setDescriptions] = React.useState(
+            () => {
+                if(projectName === 'mailman') {
+                    return getDescriptions(`${projectName}${(mobile)? 'Mobile':'PC'}`);
+                }
+                else {
+                    return getDescriptions(projectName);
+                }
+            }
+        );
     const [slideIndex, setSlideIndex] = React.useState(0);
-    const [files, setFiles] = React.useState(getFiles(projectName));
-    const [descriptions, setDescriptions] = React.useState(getDescriptions(projectName));
-
+            
     React.useEffect(() => {
         setFiles(files);
         setDescriptions(descriptions);
@@ -164,6 +302,25 @@ const Carousel = ({projectName = 'huffman'}) => {
     <div className="slideshow-container"> 
         <div className="fade">
             <div className="numbertext">{slideIndex+1} / {descriptions.length}</div>
+            {projectName.includes("mailman")? 
+            <div className="toggle-buttons">
+                <button className={`${mobile? '':'selected'}`} onClick={() => {
+                    setMobileView(false);
+                    setFiles(getFiles(`${projectName}PC`));
+                    setDescriptions(getDescriptions(`${projectName}PC`));
+                    setSlideIndex(0);
+                    }}>
+                    <FontAwesomeIcon icon={faLaptop} style={{color: "#737373", height:'20px',width:'20px', margin:'auto 0 auto 0'}} size="large" />
+                </button>
+                <button className={`${mobile? 'selected':''}`} onClick={() => {
+                    setMobileView(true);
+                    setFiles(getFiles(`${projectName}Mobile`));
+                    setDescriptions(getDescriptions(`${projectName}Mobile`));
+                    setSlideIndex(0);
+                    }}>
+                    <FontAwesomeIcon icon={faMobileScreenButton} style={{color: "#737373", height:'20px',width:'20px', margin:'auto 0 auto 0'}} size="large" />
+                </button>
+            </div> : null}
             <img src={files[descriptions[slideIndex]]}/>  
             <div className="text">{descriptions[slideIndex]}</div>
         </div>

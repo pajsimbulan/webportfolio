@@ -1,5 +1,6 @@
 .home {
-    height: 100vh; 
+height: 100vh; 
+max-height: 100vh;
 background-color: white;
 padding: 100px 200px 100px 200px;
 width: 100%;

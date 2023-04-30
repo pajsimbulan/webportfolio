@@ -28,6 +28,7 @@ import tailwindcss from './assets/tailwindcss.svg';
 import hostinger from './assets/hostinger.svg';
 import demoVideo from './assets/slugfit/slugfit_demo.mp4';
 
+
 function Projects() {
     const [openVideoModal, setOpenVideoModal] = React.useState(false);
 
@@ -80,7 +81,7 @@ function Projects() {
                     <button className="button3" onClick={() => {}}>Live Site</button>
                     <div className='row' style={{justifyContent:'space-between'}}>
                         <div style={{width:'48%'}}>
-                    <button onClick={() => {openLink('https://github.com/pajsimbulan/MailMan')}}>Github</button>
+                    <button onClick={() => {openLink('https://github.com/pajsimbulan/MailMan')}}>Code</button>
                         </div>
                         <div style={{width:'48%'}}>     
                     <button className="button2" onClick={() => {}}>Demo Video</button>
@@ -93,7 +94,8 @@ function Projects() {
                     <h2 className="projectTitle" style={{color:'#ed4e39'}}>Slugfit</h2>
                     <h3 className='projectSubTitle'>Cross-Platform Fitness App</h3>
         <p>Inspired by the <span>block-based</span> UI of <span>Notion</span>, <span>Slugfit</span> is a fitness app designed to cater to users with varying levels of fitness experience. It offers features such as creating, saving, and editing workouts, as well as workout analysis, an integrated calendar to keep track of workouts, and social interactions &mdash;<span>through social feed</span>.</p>
-                    <p>Me and a team developed Slugfit over 10 weeks, following the <span>Scrum</span> and <span>Agile methodologies</span>, in which I lead the team as a <span>Scrum Master</span> for one sprint. The project was divided into four sprints, and we collaborated closely to create a seamless and user-friendly app. The app is compatible with both iOS and Android devices.</p>
+                    <p>Me and a team developed Slugfit over 10 weeks, following the <span>Scrum</span> and <span>Agile methodologies</span>, in which I led the team as a <span>Scrum Master</span> for one sprint. The project was divided into four sprints, and we collaborated closely to create a seamless and user-friendly app. The app is compatible with both iOS and Android devices.</p>
+                    <br />
                     <div className='row'>
                         <h3>Technologies Used: </h3>
                     </div>
@@ -112,7 +114,7 @@ function Projects() {
                     </div>
                     <br />
                     <div style={{display:'flex', flexDirection:'column', flexGrow:1}}/>
-                    <button onClick={() => {openLink('https://github.com/pajsimbulan/SlugFit')}}>Github</button>
+                    <button onClick={() => {openLink('https://github.com/pajsimbulan/SlugFit')}}>Code</button>
                     <button className="button2" onClick={() => {setOpenVideoModal(true)}}>Demo Video</button>
                 </div>
                 <div className="projectImage">
@@ -130,7 +132,6 @@ function Projects() {
                     <p>The HTTP server supports both single-threaded and multi-threaded models to handle incoming client connections and serve HTTP requests. It employs mutex lock with conditions on a queue to provide a thread-safe environment.</p>
                     <p>Key features of this server include support for the <span>GET</span>, <span>PUT</span>, and <span>HEAD</span> HTTP methods, ensuring a flexible and responsive interaction with clients.</p>
                     <br />
-                    <div style={{display:'flex', flexDirection:'column', flexGrow:1}}/>
                     <div className='row'>
                         <h3>Technologies Used: </h3>
                     </div>
@@ -140,7 +141,8 @@ function Projects() {
                         <div className="chip">Linux <img src={linux}></img></div>
                     </div>
                     <br />
-                    <button onClick={() => {openLink('https://github.com/pajsimbulan/httpserver')}}>Github</button>
+                    <div style={{display:'flex', flexDirection:'column', flexGrow:1}}/>
+                    <button onClick={() => {openLink('https://github.com/pajsimbulan/httpserver')}}>Code</button>
                 </div>
             </div>
             <div className="projectContainer p4"> 
@@ -160,7 +162,7 @@ function Projects() {
                     </div>
                     <br />
                     <div style={{display:'flex', flexDirection:'column', flexGrow:1}}/>
-                    <button onClick={() => {openLink('https://github.com/pajsimbulan/huffman')}}>Github</button>
+                    <button onClick={() => {openLink('https://github.com/pajsimbulan/huffman')}}>Code</button>
                 </div>
                 
                 <div className="projectImage">
@@ -173,7 +175,7 @@ function Projects() {
                 </div>
                 <div className="projectText">
                     <h2 className="projectTitle" style={{color:'black'}}>Website Portfolio</h2>
-                    <h3 className='projectSubTitle'> paulsimbulan.com</h3>
+                    <h3 className='projectSubTitle'>paulsimbulan.com</h3>
                     <p>A personal website portfolio I developed to showcase my work and a little about myself as a Software Engineer.  The website provides an overview of the various projects I've worked on.</p>
                     <br />
                     <div className='row'>
@@ -189,7 +191,7 @@ function Projects() {
                     </div>
                     <br />
                     <div style={{display:'flex', flexDirection:'column', flexGrow:1}}/>
-                    <button onClick={() => {openLink('https://github.com/pajsimbulan/webportfolio')}}>Github</button>
+                    <button onClick={() => {openLink('https://github.com/pajsimbulan/webportfolio')}}>Code</button>
                 </div>
             </div>
 

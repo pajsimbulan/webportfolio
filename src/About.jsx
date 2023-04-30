@@ -29,8 +29,8 @@ import linux from './assets/linux.svg';
 import tailwindcss from './assets/tailwindcss.svg';
 import hostinger from './assets/hostinger.svg';
 
-const technologies = ['HTML', 'CSS', 'Javascript', 'Typescript', 'React','TailwindCSS', 'ExpressJS', 
-'MongoDB', 'Python', 'Java', 'C++', 'C', 'Git', 'Supabase', 'MaterialUI', 'NodeJS', 'Postgresql', 'Linux','Figma', 'Expo', 'Vite', 'Docker', 'Jest', 'Storybook', 'Heroku','Hostinger','NPM', 'Yarn'];
+const technologies = ['HTML', 'CSS', 'Javascript', 'Typescript', 'React','TailwindCSS','MaterialUI', 'Python', 'Java', 'C++', 'C', 'ExpressJS', 'NodeJS','Expo','Figma',
+'MongoDB','Supabase' , 'Postgresql', 'Git','Linux', 'Docker','Vite', 'NPM', 'Yarn', 'Jest', 'Storybook', 'Heroku','Hostinger'];
 const techImages = {
     HTML: html,
     CSS: css,
@@ -74,7 +74,7 @@ function About() {
                     </p>
                     <p>
                         I am a graduate of the <span>University of California, Santa Cruz</span> with a <span>Bachelor's Degree</span> in <span>Computer Science</span>, where I learned the fundamentals of programming&mdash;  
-                        from learning the Microarchitecture of CPU with RISC-V to data structures and utilizing a full tech stack. 
+                        from learning the Microarchitecture of CPU with RISC-V Assembly to Data Structures and utilizing a Full Tech Stack. 
                     </p>
                     <p>
                         From my recent solo project, <span>Mailman</span>, I learned how to fully build a full stack application independently and attempt to innovate a new way to send emails and 
@@ -87,7 +87,7 @@ function About() {
                 </div>
                 <div className='line'/>
                 <div className="technologiesContainer">
-                    <h1>Technologies and Tools</h1>
+                    <h1>Technologies & Skills</h1>
                     <div className="techstacks">
                         {technologies.map((tech) => { return (
                           <div className="techCard" key={tech}>

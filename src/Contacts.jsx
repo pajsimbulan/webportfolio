@@ -2,7 +2,7 @@ import * as React from 'react';
 import './Contacts.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faFile } from '@fortawesome/free-solid-svg-icons';
+import { faFile, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import gmail from './assets/gmail.svg';
 import emailjs from '@emailjs/browser';
 import resumeicon from './assets/resumeicon.svg';
@@ -158,7 +158,9 @@ function Contacts() {
                         <p>Resume</p>
                     </div>
                 </div>
+                
             </div>
+            
             <div className="container-2 forms">
                 <form onSubmit={handleSubmit}>
                         <p>Name</p>
@@ -168,7 +170,7 @@ function Contacts() {
                         <p htmlFor="message">Message:</p>
                         <textarea id="message" ref={messageRef} rows="10" resize="none" placeholder="Enter a message"/>
                 </form>
-                <button type="button" onClick={(event) => handleSubmit(event)}>Submit</button>
+                <button type="button" onClick={(event) => handleSubmit(event)}>Send Message <span> <FontAwesomeIcon icon={faPaperPlane} style={{color: "#f3f4f6", height:'px',width:'15px', margin:'auto 0 auto 0'}} size="small" /></span></button>
             </div>
         </div>
         

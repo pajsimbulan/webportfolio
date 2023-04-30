@@ -51,7 +51,7 @@ To create a production build of the website, run:
 npm run build
 ```
 
-This will generate a `build` folder containing the optimized build. You can then deploy the contents of this folder to your preferred hosting provider, such as `Hostinger` (my current host provider).
+This will generate a `dist` build folder containing the optimized build. You can then deploy the contents of this folder to your preferred hosting provider, such as `Hostinger` (my current host provider).
 
 ## Contributing
 Contributions are welcome! Please feel free to submit pull requests or create issues to report bugs or suggest improvements.
