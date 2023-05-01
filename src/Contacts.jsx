@@ -135,25 +135,25 @@ function Contacts() {
                 <div className='links'>
                     <div className='link-col'>
                         <button onClick={() => openLink('https://github.com/pajsimbulan')}>
-                        <FontAwesomeIcon icon={faGithub} style={{color: "#000000", height:'30px',width:'30px', margin:'auto 0 auto 0'}} size="large" />
+                        <FontAwesomeIcon icon={faGithub} className="icon" style={{color: "#000000"}}/>
                         </button>   
                         <p>Github</p>
                     </div>
                     <div className='link-col'>
                         <button onClick={() => console.log("openLink('https://www.linkedin.com/in/pauljsimbulan/')")}>
-                            <FontAwesomeIcon icon={faLinkedin} style={{color: "#0b66c2", height:'30px',width:'30px', margin:'auto 0 auto 0'}} size="large" />
+                            <FontAwesomeIcon icon={faLinkedin} className="icon" style={{color: "#0b66c2"}}/>
                         </button>   
                         <p>Linkedin</p>
                     </div>
                     <div className='link-col'>
                         <button onClick={() => window.location.href = 'mailto:info@paulsimbulan.com'}>
-                            <img src={gmail} alt="gmail icon" style={{height:'30px',width:'30px', margin:'auto 0 auto 0'}}/>
+                            <img src={gmail} alt="gmail icon" />
                         </button>
                         <p>Email</p>
                     </div>
                     <div className='link-col'>
                         <button onClick={() => console.log("openLink('https://yourwebsite.com/your_resume.pdf')")}>
-                        <img src={resumeicon} alt="resume" style={{height:'30px',width:'30px', margin:'auto 0 auto 0'}}/>
+                        <img src={resumeicon} alt="resume"/>
                         </button>
                         <p>Resume</p>
                     </div>
@@ -170,7 +170,7 @@ function Contacts() {
                         <p htmlFor="message">Message:</p>
                         <textarea id="message" ref={messageRef} rows="10" resize="none" placeholder="Enter a message"/>
                 </form>
-                <button type="button" onClick={(event) => handleSubmit(event)}>Send Message <span> <FontAwesomeIcon icon={faPaperPlane} style={{color: "#f3f4f6", height:'px',width:'15px', margin:'auto 0 auto 0'}} size="small" /></span></button>
+                <button type="button" onClick={(event) => handleSubmit(event)}>Send Message <span> <FontAwesomeIcon icon={faPaperPlane} style={{color: "#f3f4f6", height:'px',width:'15px', margin:'auto 0 auto 0'}} /></span></button>
             </div>
         </div>
         

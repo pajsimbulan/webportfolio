@@ -16,10 +16,10 @@ function Footer() {
         <div className="footer">
             <div className="linkRow">
                 <button onClick={() => openLink('https://github.com/pajsimbulan')}>
-                    <FontAwesomeIcon icon={faGithub} style={{color: "#000000", height:'20px',width:'20px', margin:'auto 0 auto 0'}} size="large" />
+                    <FontAwesomeIcon icon={faGithub} className="icon" style={{color: "#000000"}} />
                 </button>   
                 <button onClick={() => console.log("openLink('https://www.linkedin.com/in/pauljsimbulan/')")}>
-                    <FontAwesomeIcon icon={faLinkedin} style={{color: "#0b66c2", height:'20px',width:'20px', margin:'auto 0 auto 0'}} size="large" />
+                    <FontAwesomeIcon icon={faLinkedin} className="icon" style={{color: "#0b66c2"}} />
                 </button>   
                 <button onClick={() => window.location.href = 'mailto:info@paulsimbulan.com'}>
                     <img src={gmail} alt="gmail icon"/>

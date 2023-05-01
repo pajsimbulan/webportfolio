@@ -108,6 +108,13 @@ input {
     color: #183153;
     font-weight: bold;
 }
+
+.link-col .icon, .link-col img {
+    height:30px;
+    width:30px; 
+    margin:auto 0 auto 0
+}
+
 .modalLoadingContents {
     display: flex;
     flex-direction: column;
@@ -244,6 +251,12 @@ input {
 
 
 @media screen and (max-width: 1200px) {
+    .link-col img, .link-col .icon {
+        width: 27px;
+        height: 27px;
+    }
+
+    
     .container {
         display: flex;
         flex-direction: column;
@@ -304,6 +317,11 @@ input {
 
 @media screen and (max-width: 900px) {
 
+    .link-col img, .link-col .icon {
+        width: 24px;
+        height: 24px;
+    }
+
     .container {
         gap: 25px;
     }
@@ -359,7 +377,12 @@ input {
 
 
 @media screen and (max-width: 600px) {
-   
+
+    .link-col img, .link-col .icon {
+        width: 21px;
+        height: 21px;
+    }
+
     .container {
         gap: 20px;
     }

@@ -6,7 +6,7 @@ import { faMobileScreenButton, faLaptop } from '@fortawesome/free-solid-svg-icon
 import mailmanPCEmailToolbar from '../assets/mailman/pc/body_settings.jpg';
 import mailmanPCChangeProfilePicture from '../assets/mailman/pc/change_profile_picture.jpg';
 import mailmanPCCompose from '../assets/mailman/pc/compose_with_images_files.jpg';
-import mailmanPCCreateAccount from '../assets/mailman/pc/create_account.png';
+import mailmanPCCreateAccount from '../assets/mailman/pc/create_account.jpg';
 import mailmanPCEditBirthdateInvalid from '../assets/mailman/pc/edit_birthdate_invalid.jpg';
 import mailmanPCEditFirstName from '../assets/mailman/pc/edit_firstname.jpg';
 import mailmanPCEditLastName from '../assets/mailman/pc/edit_lastname.jpg';
@@ -16,7 +16,7 @@ import mailmanPCEmailContents from '../assets/mailman/pc/email_content.jpg';
 import mailmanPCEmailContents2 from '../assets/mailman/pc/email_content_2.jpg';
 import mailmanPCErrorMessage from '../assets/mailman/pc/error_message.jpg';
 import mailmanPCErrorPage from '../assets/mailman/pc/error_page.png';
-import mailmanPCForgotPassword from '../assets/mailman/pc/forgot_password.png';
+import mailmanPCForgotPassword from '../assets/mailman/pc/forgot_password.jpg';
 import mailmanPCGreeting from '../assets/mailman/pc/greeting.png';
 import mailmanPCHome from '../assets/mailman/pc/home.jpg';
 import mailmanPCLoading from '../assets/mailman/pc/loading_fetching.png';
@@ -137,41 +137,41 @@ const mailmanPCFiles = {
     "Editing Birth Date (Invalid)": mailmanPCEditBirthdateInvalid, 
     "Error Page": mailmanPCErrorPage,
 }
-const mailmanMobileDescriptions = ["Sign In", "Create Account", "Forgot Password", "Password Changed" , "Greeting", 
-"Loading", "Home", "Navigation Bar", "Emails","Email Toolbar","Row Settings",
-"Empty Inbox", "Profile Menu","Searching Emails", "Composing an Email (empty)", "Composing an Email","Email Contents", "Email Contents Cont'd","Replying",
-"Profile","Profile Cont'd", "Change Profile Picture", "Editing First Name", "Editing Last Name", "Changing Password", 
-"Editing Gender", "Editing Birth Date", "Editing Birth Date (Invalid)", "Error Page"]
+const mailmanMobileDescriptions = ["Sign In", "Create Account", "Forgot Password", "Password Changed" ,"Greeting", 
+"Loading","Home","Navigation Bar","Emails","Email Toolbar","Row Settings",
+"Empty Inbox","Profile Menu","Searching Emails","Composing an Email (empty)","Composing an Email","Email Contents","Email Contents Cont'd","Replying",
+"Profile","Profile Cont'd","Change Profile Picture","Editing First Name","Editing Last Name","Changing Password", 
+"Editing Gender","Editing Birth Date","Editing Birth Date (Invalid)","Error Page"]
 const mailmanMobileFiles = {
-"Sign In": mailmanMobileSignIn,
-"Create Account": mailmanMobileCreateAccount,
-"Forgot Password": mailmanMobileForgotPassword,
-"Password Changed": mailmanMobilePasswordChanged,
-"Greeting": mailmanMobileGreet,
-"Loading": mailmanMobileLoading,
-"Home": mailmanMobileHome,
-"Navigation Bar": mailmanMobileNavbar,
-"Emails": mailmanMobileMailBody,
-"Email Toolbar": mailmanMobileEmailToolbar,
-"Row Settings": mailmanMobileRows,
-"Empty Inbox": mailmanMobileNoEmails,
-"Profile Menu": mailmanMobileProfileMenu,
-"Searching Emails": mailmanMobileSearch,
-"Composing an Email (empty)": mailmanMobileComposeEmail,
-"Composing an Email": mailmanMobileComposeEmail2,
-"Email Contents": mailmanMobileEmailContents,
-"Email Contents Cont'd": mailmanMobileEmailContents2,
-"Replying": mailmanMobileReply,
-"Profile": mailmanMobileProfile,
-"Profile Cont'd": mailmanMobileProfile2,
-"Change Profile Picture": mailmanMobileEditProfilePicture,
-"Editing First Name": mailmanMobileEditFirstName,
-"Editing Last Name": mailmanMobileEditLastName,
-"Changing Password": mailmanMobileChangePassword,
-"Editing Gender": mailmanMobileEditGender,
-"Editing Birth Date": mailmanMobileEditBirthdate,
-"Editing Birth Date (Invalid)": mailmanMobileEditBirthdateInvalid,
-"Error Page": mailmanMobileErrorPage,
+    "Sign In": mailmanMobileSignIn,
+    "Create Account": mailmanMobileCreateAccount,
+    "Forgot Password": mailmanMobileForgotPassword,
+    "Password Changed": mailmanMobilePasswordChanged,
+    "Greeting": mailmanMobileGreet,
+    "Loading": mailmanMobileLoading,
+    "Home": mailmanMobileHome,
+    "Navigation Bar": mailmanMobileNavbar,
+    "Emails": mailmanMobileMailBody,
+    "Email Toolbar": mailmanMobileEmailToolbar,
+    "Row Settings": mailmanMobileRows,
+    "Empty Inbox": mailmanMobileNoEmails,
+    "Profile Menu": mailmanMobileProfileMenu,
+    "Searching Emails": mailmanMobileSearch,
+    "Composing an Email (empty)": mailmanMobileComposeEmail,
+    "Composing an Email": mailmanMobileComposeEmail2,
+    "Email Contents": mailmanMobileEmailContents,
+    "Email Contents Cont'd": mailmanMobileEmailContents2,
+    "Replying": mailmanMobileReply,
+    "Profile": mailmanMobileProfile,
+    "Profile Cont'd": mailmanMobileProfile2,
+    "Change Profile Picture": mailmanMobileEditProfilePicture,
+    "Editing First Name": mailmanMobileEditFirstName,
+    "Editing Last Name": mailmanMobileEditLastName,
+    "Changing Password": mailmanMobileChangePassword,
+    "Editing Gender": mailmanMobileEditGender,
+    "Editing Birth Date": mailmanMobileEditBirthdate,
+    "Editing Birth Date (Invalid)": mailmanMobileEditBirthdateInvalid,
+    "Error Page": mailmanMobileErrorPage,
 }
 
 
@@ -302,6 +302,7 @@ const Carousel = ({projectName}) => {
     <div className="slideshow-container"> 
         <div className="fade">
             <div className="numbertext">{slideIndex+1} / {descriptions.length}</div>
+           
             {projectName.includes("mailman")? 
             <div className="toggle-buttons">
                 <button className={`${mobile? '':'selected'}`} onClick={() => {
@@ -310,7 +311,7 @@ const Carousel = ({projectName}) => {
                     setDescriptions(getDescriptions(`${projectName}PC`));
                     setSlideIndex(0);
                     }}>
-                    <FontAwesomeIcon icon={faLaptop} style={{color: "#737373", height:'20px',width:'20px', margin:'auto 0 auto 0'}} size="large" />
+                    <FontAwesomeIcon icon={faLaptop} className="icon" style={{color: "#737373"}} />
                 </button>
                 <button className={`${mobile? 'selected':''}`} onClick={() => {
                     setMobileView(true);
@@ -318,11 +319,12 @@ const Carousel = ({projectName}) => {
                     setDescriptions(getDescriptions(`${projectName}Mobile`));
                     setSlideIndex(0);
                     }}>
-                    <FontAwesomeIcon icon={faMobileScreenButton} style={{color: "#737373", height:'20px',width:'20px', margin:'auto 0 auto 0'}} size="large" />
+                    <FontAwesomeIcon icon={faMobileScreenButton} className="icon" style={{color: "#737373"}} />
                 </button>
             </div> : null}
             <img src={files[descriptions[slideIndex]]}/>  
             <div className="text">{descriptions[slideIndex]}</div>
+           
         </div>
         <div className="prev" onClick={() => {
           setSlideIndex(

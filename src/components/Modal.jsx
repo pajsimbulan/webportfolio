@@ -26,7 +26,7 @@ const Modal = ({ closeModal }) => {
       <div className="modalContents">
         <div className='closeRow'>
           <button onClick={closeModal}>
-            <FontAwesomeIcon icon={faXmark} size='xl' style={{height:'30px', width:'30px', color:'black'}}/>
+            <FontAwesomeIcon icon={faXmark} style={{height:'30px', width:'30px', color:'black'}}/>
           </button>
         </div>
         <a href="#home" onClick={() => {closeModal();}}>Home</a>

@@ -26,11 +26,14 @@ import heroku from './assets/heroku.svg';
 import linux from './assets/linux.svg';
 import tailwindcss from './assets/tailwindcss.svg';
 import hostinger from './assets/hostinger.svg';
-import demoVideo from './assets/slugfit/slugfit_demo.mp4';
+import slugFitDemoVideo from './assets/slugfit/slugfit_demo.mp4';
+import mailmanDemoVideo from './assets/mailman/mailman_demo.mp4';
 
 
 function Projects() {
     const [openVideoModal, setOpenVideoModal] = React.useState(false);
+    const [video, setVideo] = React.useState(mailmanDemoVideo);
+    const [videoLink, setVideoLink] = React.useState('https://youtu.be/pvIHewhP_T8');
 
     const openLink = (url) => {
         window.open(url, "_blank");
@@ -43,10 +46,10 @@ function Projects() {
                     <div className="modalVideoContents">
                         <button className="closeButton" onClick={() => setOpenVideoModal(false)}>Close</button>
                         <video controls>
-                            <source src={demoVideo} type="video/mp4" />
+                            <source src={video} type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
-                        <p>Video not loading?  Watch it with this link: <a href='https://youtu.be/2OFljDC_c74' target="_blank">https://youtu.be/2OFljDC_c74</a></p>
+                        <p>Video not loading?  Watch it with this link: <a href={videoLink} target="_blank">{videoLink}</a></p>
                     </div>
             </div>}
             <h1>Projects</h1>
@@ -56,9 +59,17 @@ function Projects() {
                 </div>
                 <div className="projectText">
                     <h2 className="projectTitle">Mailman</h2>
-                    <h3 className='projectSubTitle' style ={{color:'red'}}> In Progress</h3>
-                    <p style ={{color:'red'}}> In Progress </p>
-                    <br />
+                    <h3 className='projectSubTitle'> Modern Lightweight Email Service</h3>
+                    <p><span>Mailman</span> is a <span>lightweight email service</span> designed to simplify and streamline the 
+                    emailing experience for users. It's a fresh take on email services that offers a <span>chat-like experience</span> by adopting a <span>less formal</span> and more streamlined approach. Built using modern technologies, it focuses on offering an easy-to-use 
+                    interface, quick navigation, and essential email features without the clutter. </p>
+                    <p>Its intuitive email composer, efficient search capabilities, 
+                    and customizable inbox management make it a breeze to send and receive emails.  Mailman ensures the <span>privacy</span> and <span>safety</span> of its users by employing secure authentication and encryption methods.</p>
+                    <p>This is a <span>solo project</span> of mine that I will continuously improve as I gain more experience in the field. <span>AI technology</span> to help users craft emails in their unique writing style and a <span>UI re-design</span> are planned for the future.  The app is compatible with both PC and Mobile devices. </p>
+                    <div className='row'>
+                        <h3>Version: </h3>
+                        <p>1.0</p>
+                    </div>  
                     <div className='row'>
                         <h3>Technologies Used: </h3>
                     </div>
@@ -71,20 +82,25 @@ function Projects() {
                     <div className="chip">Express<img src={express}></img></div>
                     <div className="chip">MongoDB<img src={mongodb}></img></div>
                     <div className="chip">JSON Web Token</div>
-                    <div className="chip">Bcrypt</div>
+                    <div className="chip">Bcrypt</div>  
                     <div className="chip">NPM<img src={npm}></img></div>
                     <div className="chip">Github<img src={git}></img></div>
+                    <div className="chip">Hostinger<img src={hostinger}></img></div>
                     <div className="chip">Heroku <img src={heroku}></img></div>
                     </div>
                     <br />
                     <div style={{display:'flex', flexDirection:'column', flexGrow:1}}/>
-                    <button className="button3" onClick={() => {}}>Live Site</button>
+                    <button className="button3" onClick={() => {openLink('https://mailman.paulsimbulan.com')}}>Live Site</button>
                     <div className='row' style={{justifyContent:'space-between'}}>
                         <div style={{width:'48%'}}>
                     <button onClick={() => {openLink('https://github.com/pajsimbulan/MailMan')}}>Code</button>
                         </div>
                         <div style={{width:'48%'}}>     
-                    <button className="button2" onClick={() => {}}>Demo Video</button>
+                    <button className="button2" onClick={() => {
+                        setVideo(mailmanDemoVideo);
+                        setVideoLink('https://youtu.be/pvIHewhP_T8');
+                        setOpenVideoModal(true);
+                        }}>Demo Video</button>
                         </div>
                     </div>
                 </div>
@@ -93,8 +109,8 @@ function Projects() {
                 <div className="projectText">   
                     <h2 className="projectTitle" style={{color:'#ed4e39'}}>Slugfit</h2>
                     <h3 className='projectSubTitle'>Cross-Platform Fitness App</h3>
-        <p>Inspired by the <span>block-based</span> UI of <span>Notion</span>, <span>Slugfit</span> is a fitness app designed to cater to users with varying levels of fitness experience. It offers features such as creating, saving, and editing workouts, as well as workout analysis, an integrated calendar to keep track of workouts, and social interactions &mdash;<span>through social feed</span>.</p>
-                    <p>Me and a team developed Slugfit over 10 weeks, following the <span>Scrum</span> and <span>Agile methodologies</span>, in which I led the team as a <span>Scrum Master</span> for one sprint. The project was divided into four sprints, and we collaborated closely to create a seamless and user-friendly app. The app is compatible with both iOS and Android devices.</p>
+        <p>Inspired by the <span>block-based</span> UI of <span>Notion</span>, <span>Slugfit</span> is a fitness app designed to cater to users with varying levels of fitness experience. It offers features such as creating, saving, and editing workouts, as well as workout analysis, an integrated calendar to keep track of workouts, and social interactions &mdash;<span>through a social feed</span>.</p>
+                    <p>Me and a team developed Slugfit over 10 weeks, following the <span>Scrum</span> and <span>Agile methodologies</span>, where I led the team as a <span>Scrum Master</span> for one sprint. The project was divided into four sprints, and we collaborated closely to create a seamless and user-friendly app. The app is compatible with both iOS and Android devices.</p>
                     <br />
                     <div className='row'>
                         <h3>Technologies Used: </h3>
@@ -115,7 +131,11 @@ function Projects() {
                     <br />
                     <div style={{display:'flex', flexDirection:'column', flexGrow:1}}/>
                     <button onClick={() => {openLink('https://github.com/pajsimbulan/SlugFit')}}>Code</button>
-                    <button className="button2" onClick={() => {setOpenVideoModal(true)}}>Demo Video</button>
+                    <button className="button2" onClick={() => {
+                        setVideo(slugFitDemoVideo);
+                        setVideoLink('https://youtu.be/2OFljDC_c74');
+                        setOpenVideoModal(true);
+                        }}>Demo Video</button>
                 </div>
                 <div className="projectImage">
                     <Carousel projectName='slugfit'/>
