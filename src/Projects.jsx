@@ -26,13 +26,11 @@ import heroku from './assets/heroku.svg';
 import linux from './assets/linux.svg';
 import tailwindcss from './assets/tailwindcss.svg';
 import hostinger from './assets/hostinger.svg';
-import slugFitDemoVideo from './assets/slugfit/slugfit_demo.mp4';
-import mailmanDemoVideo from './assets/mailman/mailman_demo.mp4';
 
 
 function Projects() {
     const [openVideoModal, setOpenVideoModal] = React.useState(false);
-    const [video, setVideo] = React.useState(mailmanDemoVideo);
+    const [video, setVideo] = React.useState("https://www.youtube.com/embed/pvIHewhP_T8");
     const [videoLink, setVideoLink] = React.useState('https://youtu.be/pvIHewhP_T8');
 
     const openLink = (url) => {
@@ -45,10 +43,12 @@ function Projects() {
                 <div className="modal" data-backdrop="static">
                     <div className="modalVideoContents">
                         <button className="closeButton" onClick={() => setOpenVideoModal(false)}>Close</button>
-                        <video controls>
-                            <source src={video} type="video/mp4" />
-                            Your browser does not support the video tag.
-                        </video>
+                        <iframe src={video} 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowFullScreen>
+                        </iframe>
                         <p>Video not loading?  Watch it with this link: <a href={videoLink} target="_blank">{videoLink}</a></p>
                     </div>
             </div>}
@@ -97,7 +97,7 @@ function Projects() {
                         </div>
                         <div style={{width:'48%'}}>     
                     <button className="button2" onClick={() => {
-                        setVideo(mailmanDemoVideo);
+                        setVideo("https://www.youtube.com/embed/pvIHewhP_T8");
                         setVideoLink('https://youtu.be/pvIHewhP_T8');
                         setOpenVideoModal(true);
                         }}>Demo Video</button>
@@ -132,7 +132,7 @@ function Projects() {
                     <div style={{display:'flex', flexDirection:'column', flexGrow:1}}/>
                     <button onClick={() => {openLink('https://github.com/pajsimbulan/SlugFit')}}>Code</button>
                     <button className="button2" onClick={() => {
-                        setVideo(slugFitDemoVideo);
+                        setVideo("https://www.youtube.com/embed/2OFljDC_c74");
                         setVideoLink('https://youtu.be/2OFljDC_c74');
                         setOpenVideoModal(true);
                         }}>Demo Video</button>

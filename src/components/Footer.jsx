@@ -18,7 +18,7 @@ function Footer() {
                 <button onClick={() => openLink('https://github.com/pajsimbulan')}>
                     <FontAwesomeIcon icon={faGithub} className="icon" style={{color: "#000000"}} />
                 </button>   
-                <button onClick={() => console.log("openLink('https://www.linkedin.com/in/pauljsimbulan/')")}>
+                <button onClick={() => openLink('https://www.linkedin.com/in/pauljsimbulan/')}>
                     <FontAwesomeIcon icon={faLinkedin} className="icon" style={{color: "#0b66c2"}} />
                 </button>   
                 <button onClick={() => window.location.href = 'mailto:info@paulsimbulan.com'}>

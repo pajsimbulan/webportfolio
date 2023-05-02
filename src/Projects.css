@@ -80,7 +80,7 @@
 
 .projectImage {
 
-    background-color: #e7e6ec;
+    background-color: #E8EAEE;
 }   
 
 .projectContainer span {
@@ -142,8 +142,8 @@
     text-align: center;
 }
 
-.modalVideoContents video {
-    width: 60vw;
+.modalVideoContents iframe {
+    width: 70vw;
     height: 50vw;
 }
 

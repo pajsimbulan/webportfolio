@@ -7,7 +7,7 @@ import mailmanPCEmailToolbar from '../assets/mailman/pc/body_settings.jpg';
 import mailmanPCChangeProfilePicture from '../assets/mailman/pc/change_profile_picture.jpg';
 import mailmanPCCompose from '../assets/mailman/pc/compose_with_images_files.jpg';
 import mailmanPCCreateAccount from '../assets/mailman/pc/create_account.jpg';
-import mailmanPCEditBirthdateInvalid from '../assets/mailman/pc/edit_birthdate_invalid.jpg';
+import mailmanPCEditBirthdate from '../assets/mailman/pc/edit_birthdate.jpg';
 import mailmanPCEditFirstName from '../assets/mailman/pc/edit_firstname.jpg';
 import mailmanPCEditLastName from '../assets/mailman/pc/edit_lastname.jpg';
 import mailmanPCEditPassword from '../assets/mailman/pc/edit_password.jpg';
@@ -32,35 +32,37 @@ import mailmanPCSearch from '../assets/mailman/pc/search_result.jpg';
 import mailmanPCSignIn from '../assets/mailman/pc/signin.png';
 import mailmanPCSuccess from '../assets/mailman/pc/success_notification.jpg'; 
 
-import mailmanMobileEmailToolbar from '../assets/mailman/mobile/body_settings.jpg'
-import mailmanMobileChangePassword from '../assets/mailman/mobile/change_password.jpg'
-import mailmanMobileComposeEmail from '../assets/mailman/mobile/compose_email.jpg'
-import mailmanMobileComposeEmail2 from '../assets/mailman/mobile/compose_email_2.jpg'
-import mailmanMobileCreateAccount from '../assets/mailman/mobile/create_account.jpg'
-import mailmanMobileEditBirthdateInvalid from '../assets/mailman/mobile/edit_birthdate_invalid.jpg'
-import mailmanMobileEditBirthdate from '../assets/mailman/mobile/edit_birthdate.jpg'
-import mailmanMobileEditFirstName from '../assets/mailman/mobile/edit_first_name.jpg'
-import mailmanMobileEditGender from '../assets/mailman/mobile/edit_gender.jpg'
-import mailmanMobileEditLastName from '../assets/mailman/mobile/edit_last_name.jpg'
-import mailmanMobileEditProfilePicture from '../assets/mailman/mobile/edit_profile_picture.jpg'
-import mailmanMobileEmailContents from '../assets/mailman/mobile/email_contents_1.jpg'
-import mailmanMobileEmailContents2 from '../assets/mailman/mobile/email_contents_2.jpg'
-import mailmanMobileErrorPage from '../assets/mailman/mobile/error_page.jpg'
-import mailmanMobileForgotPassword from '../assets/mailman/mobile/forgot_password.jpg'
-import mailmanMobileGreet from '../assets/mailman/mobile/greet.png'
-import mailmanMobileHome from '../assets/mailman/mobile/home.jpg'
-import mailmanMobileLoading from '../assets/mailman/mobile/loading_modal.png'
-import mailmanMobileMailBody from '../assets/mailman/mobile/mail_body.jpg'
-import mailmanMobileNavbar from '../assets/mailman/mobile/navbar.jpg'
-import mailmanMobileNoEmails from '../assets/mailman/mobile/no_emails.jpg'
-import mailmanMobilePasswordChanged from '../assets/mailman/mobile/password_changed.jpg'
-import mailmanMobileProfileMenu from '../assets/mailman/mobile/profile_menu.jpg'
-import mailmanMobileProfile from '../assets/mailman/mobile/profile_page_1.jpg'
-import mailmanMobileProfile2 from '../assets/mailman/mobile/profile_page_2.jpg'
-import mailmanMobileReply from '../assets/mailman/mobile/reply.jpg'
-import mailmanMobileRows from '../assets/mailman/mobile/rows.jpg'
-import mailmanMobileSearch from '../assets/mailman/mobile/search.jpg'
-import mailmanMobileSignIn from '../assets/mailman/mobile/signin.jpg'
+import mailmanMobileEmailToolbar from '../assets/mailman/mobile/body_settings.jpg';
+import mailmanMobileChangePassword from '../assets/mailman/mobile/change_password.jpg';
+import mailmanMobileComposeEmail from '../assets/mailman/mobile/compose_email.jpg';
+import mailmanMobileComposeEmail2 from '../assets/mailman/mobile/compose_email_2.jpg';
+import mailmanMobileCreateAccount from '../assets/mailman/mobile/create_account.jpg';
+import mailmanMobileEditBirthdateInvalid from '../assets/mailman/mobile/edit_birthdate_invalid.jpg';
+import mailmanMobileEditBirthdate from '../assets/mailman/mobile/edit_birthdate.jpg';
+import mailmanMobileEditFirstName from '../assets/mailman/mobile/edit_first_name.jpg';
+import mailmanMobileEditGender from '../assets/mailman/mobile/edit_gender.jpg';
+import mailmanMobileEditLastName from '../assets/mailman/mobile/edit_last_name.jpg';
+import mailmanMobileEditProfilePicture from '../assets/mailman/mobile/edit_profile_picture.jpg';
+import mailmanMobileEmailContents from '../assets/mailman/mobile/email_contents_1.jpg';
+import mailmanMobileEmailContents2 from '../assets/mailman/mobile/email_contents_2.jpg';
+import mailmanMobileErrorPage from '../assets/mailman/mobile/error_page.jpg';
+import mailmanMobileForgotPassword from '../assets/mailman/mobile/forgot_password.jpg';
+import mailmanMobileGreet from '../assets/mailman/mobile/greet.png';
+import mailmanMobileHome from '../assets/mailman/mobile/home.jpg';
+import mailmanMobileLoading from '../assets/mailman/mobile/loading_modal.png';
+import mailmanMobileMailBody from '../assets/mailman/mobile/mail_body.jpg';
+import mailmanMobileNavbar from '../assets/mailman/mobile/navbar.jpg';
+import mailmanMobileNoEmails from '../assets/mailman/mobile/no_emails.jpg';
+import mailmanMobilePasswordChanged from '../assets/mailman/mobile/password_changed.jpg';
+import mailmanMobileProfileMenu from '../assets/mailman/mobile/profile_menu.jpg';
+import mailmanMobileProfile from '../assets/mailman/mobile/profile_page_1.jpg';
+import mailmanMobileProfile2 from '../assets/mailman/mobile/profile_page_2.jpg';
+import mailmanMobileReply from '../assets/mailman/mobile/reply.jpg';
+import mailmanMobileRows from '../assets/mailman/mobile/rows.jpg';
+import mailmanMobileSearch from '../assets/mailman/mobile/search.jpg';
+import mailmanMobileSignIn from '../assets/mailman/mobile/signin.jpg';
+
+import mailmanArchtitecture from '../assets/mailman/architecture.svg'
 
 
 import huffmanIntro from '../assets/huffman/huffman_intro.jpg';
@@ -106,7 +108,7 @@ const mailmanPCDescriptions = ["Sign In", "Error Message", "Create Account", "Fo
     "Loading", "Home", "Navigation Bar", "Emails","Email Toolbar","Row Settings",
     "Empty Inbox", "Profile Menu","Searching Emails", "Composing an Email", "Success Alerts", "Email Contents", "Email Contents Cont'd","Replying",
     "Profile", "Change Profile Picture", "Editing First Name", "Editing Last Name", "Changing Password", 
-    "Editing Gender", "Editing Birth Date (Invalid)", "Error Page"]  
+    "Editing Gender", "Editing Birth Date", "Error Page", "Architecture"];  
 const mailmanPCFiles = {
     "Sign In": mailmanPCSignIn,
     "Error Message": mailmanPCErrorMessage,
@@ -134,14 +136,15 @@ const mailmanPCFiles = {
     "Editing Last Name": mailmanPCEditLastName,
     "Changing Password": mailmanPCEditPassword,
     "Editing Gender": mailmanPCEditGender,
-    "Editing Birth Date (Invalid)": mailmanPCEditBirthdateInvalid, 
+    "Editing Birth Date": mailmanPCEditBirthdate, 
     "Error Page": mailmanPCErrorPage,
+    "Architecture": mailmanArchtitecture,
 }
 const mailmanMobileDescriptions = ["Sign In", "Create Account", "Forgot Password", "Password Changed" ,"Greeting", 
 "Loading","Home","Navigation Bar","Emails","Email Toolbar","Row Settings",
 "Empty Inbox","Profile Menu","Searching Emails","Composing an Email (empty)","Composing an Email","Email Contents","Email Contents Cont'd","Replying",
 "Profile","Profile Cont'd","Change Profile Picture","Editing First Name","Editing Last Name","Changing Password", 
-"Editing Gender","Editing Birth Date","Editing Birth Date (Invalid)","Error Page"]
+"Editing Gender","Editing Birth Date","Editing Birth Date (Invalid)","Error Page", "Architecture"];
 const mailmanMobileFiles = {
     "Sign In": mailmanMobileSignIn,
     "Create Account": mailmanMobileCreateAccount,
@@ -172,6 +175,7 @@ const mailmanMobileFiles = {
     "Editing Birth Date": mailmanMobileEditBirthdate,
     "Editing Birth Date (Invalid)": mailmanMobileEditBirthdateInvalid,
     "Error Page": mailmanMobileErrorPage,
+    "Architecture": mailmanArchtitecture,
 }
 
 
