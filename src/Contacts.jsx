@@ -140,7 +140,7 @@ function Contacts() {
                         <p>Github</p>
                     </div>
                     <div className='link-col'>
-                        <button onClick={() => openLink('https://www.linkedin.com/in/pauljsimbulan/')}>
+                        <button onClick={() => console.log("openLink('https://www.linkedin.com/in/pauljsimbulan/')")}>
                             <FontAwesomeIcon icon={faLinkedin} className="icon" style={{color: "#0b66c2"}}/>
                         </button>   
                         <p>Linkedin</p>

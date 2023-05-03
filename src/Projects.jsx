@@ -65,7 +65,7 @@ function Projects() {
                     interface, quick navigation, and essential email features without the clutter. </p>
                     <p>Its intuitive email composer, efficient search capabilities, 
                     and customizable inbox management make it a breeze to send and receive emails.  Mailman ensures the <span>privacy</span> and <span>safety</span> of its users by employing secure authentication and encryption methods.</p>
-                    <p>This is a <span>solo project</span> of mine that I will continuously improve as I gain more experience in the field. <span>AI technology</span> to help users craft emails in their unique writing style and a <span>UI re-design</span> are planned for the future.  The app is compatible with both PC and Mobile devices. </p>
+                    <p>This is a <span>solo project</span> of mine that I will continuously improve as I gain more experience in the field. <span>AI technology</span> to help users craft emails in their unique writing style and a <span>UI re-design</span> are planned for the future <span>(v2.0)</span>.  The app is compatible with both PC and Mobile devices. </p>
                     <div className='row'>
                         <h3>Version: </h3>
                         <p>1.0</p>
@@ -111,7 +111,10 @@ function Projects() {
                     <h3 className='projectSubTitle'>Cross-Platform Fitness App</h3>
         <p>Inspired by the <span>block-based</span> UI of <span>Notion</span>, <span>Slugfit</span> is a fitness app designed to cater to users with varying levels of fitness experience. It offers features such as creating, saving, and editing workouts, as well as workout analysis, an integrated calendar to keep track of workouts, and social interactions &mdash;<span>through a social feed</span>.</p>
                     <p>Me and a team developed Slugfit over 10 weeks, following the <span>Scrum</span> and <span>Agile methodologies</span>, where I led the team as a <span>Scrum Master</span> for one sprint. The project was divided into four sprints, and we collaborated closely to create a seamless and user-friendly app. The app is compatible with both iOS and Android devices.</p>
-                    <br />
+                    <div className='row'>
+                        <h3>Version: </h3>
+                        <p>1.0</p>
+                    </div>  
                     <div className='row'>
                         <h3>Technologies Used: </h3>
                     </div>
@@ -127,6 +130,7 @@ function Projects() {
                     <div className="chip">Jest<img src={jest}></img></div>
                     <div className="chip">Yarn<img src={yarn}></img></div>
                     <div className="chip">Github<img src={git}></img></div>
+                    
                     </div>
                     <br />
                     <div style={{display:'flex', flexDirection:'column', flexGrow:1}}/>

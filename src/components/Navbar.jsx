@@ -7,10 +7,12 @@ import logo from '../assets/monogram-svg.svg';
 function Navbar({ openModal }) {
     return (
         <div className="navigationbar">
-                <div className="name_logo">
-                    <img src={logo} alt="ps logo" />
-                    <p>Paul Simbulan</p>
-                </div>
+                <a href="#home" className="name_logo_link">
+                    <div className="name_logo">
+                        <img src={logo} alt="ps logo" />
+                        <p>Paul Simbulan</p>
+                    </div>
+                </a>
                 <div className="navigations">
                     <a href="#home">Home</a>
                     <a href="#about">About</a>

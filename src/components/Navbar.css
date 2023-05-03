@@ -67,6 +67,25 @@ button {
     color: black;
 }
 
+.navigationbar .name_logo_link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    font-size: 100%;
+    font-family: inherit;
+    font-weight: inherit;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: none;
+    outline: none;
+}
+
+
+.name_logo :hover {
+    cursor: pointer;
+}
+
 @media screen and (max-width: 1200px) {
     .navigations {
         gap: 30px;
