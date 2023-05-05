@@ -152,7 +152,7 @@ function Contacts() {
                         <p>Email</p>
                     </div>
                     <div className='link-col'>
-                        <button onClick={() => console.log("openLink('https://yourwebsite.com/your_resume.pdf')")}>
+                        <button onClick={() => openLink('https://drive.google.com/file/d/193fr_CVtczfLmmZgPmdOJJqORhUs_MB7/view?usp=share_link')}>
                         <img src={resumeicon} alt="resume"/>
                         </button>
                         <p>Resume</p>
