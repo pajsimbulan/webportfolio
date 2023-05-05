@@ -38,6 +38,11 @@
 
   }
 
+  .modal .icon {
+    height: 30px;
+    width: 30px;
+  }
+
   .modalContents .closeRow {
     display: flex;
     flex-direction: row;
@@ -60,6 +65,10 @@
   .modal a {
     font-size: 25px;
   }
+  .modal .icon {
+    height: 25x;
+    width: 25px;
+  }
 
   .closeRow button {
     margin: 15px;
@@ -74,6 +83,10 @@
   }
   .modal a {
     font-size: 20px;
+  }
+  .modal .icon {
+    height: 20px;
+    width: 20px;
   }
 
   .closeRow button {

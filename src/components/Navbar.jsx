@@ -20,10 +20,9 @@ function Navbar({ openModal }) {
                     <a href="#contacts">Contact</a>
                     <div />
                     <button className="hamburger" onClick={openModal}>
-                        <FontAwesomeIcon icon={faBars} style={{color: "#000000",height:'20px',width:'20px', margin:'auto 0 auto 0'}} />
+                        <FontAwesomeIcon icon={faBars} className ="icon" style={{color: "#000000"}} />
                     </button>
-                </div>
-                
+                </div>  
         </div>
     );
 }
