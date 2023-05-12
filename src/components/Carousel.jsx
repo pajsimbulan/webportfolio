@@ -104,6 +104,14 @@ import slugfitArchitecture from '../assets/slugfit/slugfit_architecture.jpg';
 import slugfitFigma from '../assets/slugfit/figma_design.jpg';
 
 import website from '../assets/website/website_portfolio.jpg';
+import websiteNavModal from '../assets/website/navigation_modal.jpg';
+import websiteAbout from '../assets/website/about.jpg';
+import websiteProjects from '../assets/website/projects.jpg';
+import websiteDemoVideoModal from '../assets/website/demovideo_modal.jpg';
+import websiteContacts from '../assets/website/contacts.jpg';
+import websiteLoading from '../assets/website/loading.png';
+import websiteSendingNotificationSuccess from '../assets/website/sending_notification_success.png';
+import websiteSendingNotificationFailed from '../assets/website/sending_notification_failed.png';
 
 const mailmanPCDescriptions = ["Sign In", "Error Message", "Create Account", "Forgot Password", "Password Changed" , "Greeting", 
     "Loading", "Home", "Navigation Bar", "Emails","Email Toolbar","Row Settings",
@@ -231,9 +239,17 @@ const slugfitFiles = {
   "Figma Design": slugfitFigma,
 }
 
-const websiteDescriptions = ["Home Page"];
+const websiteDescriptions = ["Home Page", "Navigation Modal (Mobile Only)", "About Page", "Projects Page", "Video Modal" , "Contact Page", "Sending Message Loading","Sending Message Success", "Sending Message Fail",];
 const websiteFiles = {
   "Home Page": website,
+    "Navigation Modal (Mobile Only)": websiteNavModal,
+    "About Page": websiteAbout,
+    "Projects Page": websiteProjects,
+    "Video Modal": websiteDemoVideoModal,
+    "Contact Page": websiteContacts,
+    "Sending Message Loading": websiteLoading,
+    "Sending Message Success": websiteSendingNotificationSuccess,
+    "Sending Message Fail": websiteSendingNotificationFailed,
 }
 
 
