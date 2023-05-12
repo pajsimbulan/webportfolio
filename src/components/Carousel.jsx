@@ -109,7 +109,7 @@ import websiteAbout from '../assets/website/about.jpg';
 import websiteProjects from '../assets/website/projects.jpg';
 import websiteDemoVideoModal from '../assets/website/demovideo_modal.jpg';
 import websiteContacts from '../assets/website/contacts.jpg';
-import websiteLoading from '../assets/website/loading.png';
+import websiteLoading from '../assets/website/loading.jpg';
 import websiteSendingNotificationSuccess from '../assets/website/sending_notification_success.png';
 import websiteSendingNotificationFailed from '../assets/website/sending_notification_failed.png';
 

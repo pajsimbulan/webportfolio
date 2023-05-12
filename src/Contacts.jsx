@@ -2,7 +2,7 @@ import * as React from 'react';
 import './Contacts.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faFile, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import gmail from './assets/gmail.svg';
 import emailjs from '@emailjs/browser';
 import resumeicon from './assets/resumeicon.svg';
@@ -31,9 +31,6 @@ function Contacts() {
             messageRef.current.value = '';
             return;
         }
-        console.log(`Name: ${nameRef.current.value}`);  
-        console.log(`Email: ${emailRef.current.value}`);
-        console.log(`Message: ${messageRef.current.value}`);
         setSendingEmail(true);
         let status = '';
         await emailjs.send('service_8sarxo8', 'contact_form', {
@@ -82,7 +79,7 @@ function Contacts() {
         <div className="modal" data-backdrop="static">
             <div className="modalLoadingContents">
                 <div className="loading-spinner"></div>
-                <div>Sending Email</div>
+                <div>Sending Message</div>
             </div>
         </div>}
         {successfulEmail &&
