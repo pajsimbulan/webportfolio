@@ -62,7 +62,8 @@ import mailmanMobileRows from '../assets/mailman/mobile/rows.jpg';
 import mailmanMobileSearch from '../assets/mailman/mobile/search.jpg';
 import mailmanMobileSignIn from '../assets/mailman/mobile/signin.jpg';
 
-import mailmanArchtitecture from '../assets/mailman/architecture.svg'
+import mailmanArchtitecture from '../assets/mailman/architecture.svg';
+import mailmanLoginTest from '../assets/mailman/jest_test_login.jpg';
 
 
 import huffmanIntro from '../assets/huffman/huffman_intro.jpg';
@@ -108,7 +109,7 @@ const mailmanPCDescriptions = ["Sign In", "Error Message", "Create Account", "Fo
     "Loading", "Home", "Navigation Bar", "Emails","Email Toolbar","Row Settings",
     "Empty Inbox", "Profile Menu","Searching Emails", "Composing an Email", "Success Alerts", "Email Contents", "Email Contents Cont'd","Replying",
     "Profile", "Change Profile Picture", "Editing First Name", "Editing Last Name", "Changing Password", 
-    "Editing Gender", "Editing Birth Date", "Error Page", "Architecture"];  
+    "Editing Gender", "Editing Birth Date", "Error Page", "Architecture", "Backend Login Test"];  
 const mailmanPCFiles = {
     "Sign In": mailmanPCSignIn,
     "Error Message": mailmanPCErrorMessage,
@@ -139,12 +140,13 @@ const mailmanPCFiles = {
     "Editing Birth Date": mailmanPCEditBirthdate, 
     "Error Page": mailmanPCErrorPage,
     "Architecture": mailmanArchtitecture,
+    "Backend Login Test": mailmanLoginTest,
 }
 const mailmanMobileDescriptions = ["Sign In", "Create Account", "Forgot Password", "Password Changed" ,"Greeting", 
 "Loading","Home","Navigation Bar","Emails","Email Toolbar","Row Settings",
 "Empty Inbox","Profile Menu","Searching Emails","Composing an Email (empty)","Composing an Email","Email Contents","Email Contents Cont'd","Replying",
 "Profile","Profile Cont'd","Change Profile Picture","Editing First Name","Editing Last Name","Changing Password", 
-"Editing Gender","Editing Birth Date","Editing Birth Date (Invalid)","Error Page", "Architecture"];
+"Editing Gender","Editing Birth Date","Editing Birth Date (Invalid)","Error Page", "Architecture", "Backend Login Test"];
 const mailmanMobileFiles = {
     "Sign In": mailmanMobileSignIn,
     "Create Account": mailmanMobileCreateAccount,
@@ -176,6 +178,7 @@ const mailmanMobileFiles = {
     "Editing Birth Date (Invalid)": mailmanMobileEditBirthdateInvalid,
     "Error Page": mailmanMobileErrorPage,
     "Architecture": mailmanArchtitecture,
+    "Backend Login Test": mailmanLoginTest,
 }
 
 

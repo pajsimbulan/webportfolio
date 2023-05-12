@@ -65,7 +65,7 @@ function Projects() {
                     interface, quick navigation, and essential email features without the clutter. </p>
                     <p>Its intuitive email composer, efficient search capabilities, 
                     and customizable inbox management make it a breeze to send and receive emails.  Mailman ensures the <span>privacy</span> and <span>safety</span> of its users by employing secure authentication and encryption methods.</p>
-                    <p>This is a <span>solo project</span> of mine that I will continuously improve as I gain more experience in the field. <span>AI technology</span> to help users craft emails in their unique writing style and a <span>UI re-design</span> are planned for the future <span>(v2.0)</span>.  The app is compatible with both PC and Mobile devices. </p>
+                    <p>This is a <span>solo project</span> of mine that I worked on for 4 months straight and will continuously improve as I gain more experience in the field. <span>AI technology</span> to help users craft emails in their unique writing style and a <span>UI re-design</span> are planned for the future <span>(v2.0)</span>.  The app is compatible with both PC and Mobile devices. </p>
                     <div className='row'>
                         <h3>Version: </h3>
                         <p>1.0</p>
@@ -81,6 +81,7 @@ function Projects() {
                     <div className="chip">NodeJS<img src={nodejs}></img></div>
                     <div className="chip">Express<img src={express}></img></div>
                     <div className="chip">MongoDB<img src={mongodb}></img></div>
+                    <div className="chip">Jest<img src={jest}></img></div>
                     <div className="chip">JSON Web Token</div>
                     <div className="chip">Bcrypt</div>  
                     <div className="chip">NPM<img src={npm}></img></div>
