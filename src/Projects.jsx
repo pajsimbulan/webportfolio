@@ -202,6 +202,7 @@ function Projects() {
                     <h2 className="projectTitle" style={{color:'black'}}>Website Portfolio</h2>
                     <h3 className='projectSubTitle'>paulsimbulan.com</h3>
                     <p>A personal website portfolio I developed to showcase my work and a little about myself as a Software Engineer.  The website provides an overview of the various projects I've worked on.</p>
+                    <p>Website employs smooth scrolling, lazy loading, size responsiveness to ensure accessability for different devices, and EmailJS to relay messages from website to owner.</p>
                     <br />
                     <div className='row'>
                         <h3>Technologies Used: </h3>
