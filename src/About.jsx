@@ -28,9 +28,10 @@ import heroku from './assets/heroku.svg';
 import linux from './assets/linux.svg';
 import tailwindcss from './assets/tailwindcss.svg';
 import hostinger from './assets/hostinger.svg';
+import aws from './assets/aws.svg';
 
 const technologies = ['HTML', 'CSS', 'Javascript', 'Typescript', 'React','TailwindCSS','MaterialUI', 'Python', 'Java', 'C++', 'C', 'ExpressJS', 'NodeJS','Expo','Figma',
-'MongoDB','Supabase' , 'Postgresql', 'Git','Linux', 'Docker','Vite', 'NPM', 'Yarn', 'Jest', 'Storybook', 'Heroku','Hostinger'];
+'MongoDB','Supabase' , 'Postgresql', 'Git','Linux', 'Docker','Vite', 'NPM', 'Yarn', 'Jest', 'Storybook', 'Amazon Web Services', 'Heroku','Hostinger'];
 const techImages = {
     HTML: html,
     CSS: css,
@@ -60,6 +61,7 @@ const techImages = {
     Linux: linux,
     TailwindCSS: tailwindcss,
     Hostinger: hostinger,
+    'Amazon Web Services': aws
   };
   
 function About() {
