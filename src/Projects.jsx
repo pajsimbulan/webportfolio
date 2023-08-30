@@ -175,7 +175,7 @@ function Projects() {
                     <h2 className="projectTitle" style={{color:'#7f8b99'}}>Huffman Encoding and Decoding in C</h2>
                     <h3 className='projectSubTitle'> A Lossless Data Compression Implementation</h3>
                     <p> This project is one of my coursework at UCSC.  It is an implementation of the widely-used Huffman encoding and decoding algorithms in C &mdash; a lossless data compression technique.  </p>
-                    <p>The Huffman algorithm uses <span>binary trees</span>, <span>priority queues</span>,<span>linked lists</span>, and <span>bit manipulation</span> to encode and decode data.</p>
+                    <p>The Huffman algorithm uses <span>binary trees</span>, <span>stack</span>, <span>priority queues</span>, <span>linked lists</span>, and <span>bit manipulation</span> to encode and decode data.</p>
                     <p>Huffman assigns shorter binary codes to more frequently occurring characters, which in results optimal compression performance.</p>
                     <br />
                     <div className='row'>
