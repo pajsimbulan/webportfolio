@@ -71,20 +71,23 @@ function About() {
                 <div className="aboutTextContainer">
                     <h1>About</h1>
                     <p>
-                        I am a <span>Software Engineer</span> based in Bay Area, California.  I have worked with Full-Stack Web Applications, Mobile Applications, Low-level languages, and now I am currently setting my 
-                        sights on Artificial Intelligence and Rust.  
+                        I am an <span>Electrical Engineering graduate student</span> at <span>California State University, Northridge (CSUN)</span> with a 
+                        background in computer science and software engineering. My work sits at the intersection of <span>circuits</span>, <span>electronics</span>, 
+                        <span>embedded systems</span>, and software, with a growing focus on how hardware and software come together in real-world devices.
                     </p>
                     <p>
-                        I am a graduate of the <span>University of California, Santa Cruz</span> with a <span>Bachelor's Degree</span> in <span>Computer Science</span>, where I learned the fundamentals of programming&mdash;  
-                        from learning the Microarchitecture of CPU with RISC-V Assembly to Data Structures and utilizing a Full Tech Stack. 
+                        I earned my <span>Bachelor’s degree</span> in <span>Computer Science</span> from the <span>University of California</span>, <span>Santa Cruz</span>, where I built a strong foundation in programming, computer architecture, and systems-level thinking, ranging from low-level 
+                        programming and CPU microarchitecture concepts to full-stack application development. 
+                        That background now informs my transition into electrical engineering, where I’m developing hands-on experience with 
+                        circuits, electronics, embedded systems, and other areas of electrical engineering such as Power systems, Control systems, and RF/Communication. 
                     </p>
                     <p>
-                        From my recent solo project, <span>Mailman</span>, I learned how to fully build a full stack application independently and attempt to innovate a new way to send emails and 
-                        deploy it to the cloud.  I also learned the drawbacks of trying to work alone and the importance of working with a team. My goal for this project is to futher enhance it as I grow and gain more experience in the Software Engineering field.  With the rapid advancements of AI technology, I'm looking to apply that to Mailman to make it more efficient &mdash; to make communication even more seamless and accessible. 
+                        My software projects, including full-stack and mobile applications, reflect my ability to design, build, and debug complex systems end to end. 
+                        As I shift toward hardware-focused work, I’m applying those same principles to embedded platforms and electronics, emphasizing reliability, performance, and system-level understanding. 
                     </p>
                     <p>
-                        My featured project <span>Slugfit</span> is a mobile application that I built with a team of 5 other students.  In that project, I learned to function as a team and how to 
-                        work with a team to build a product.  While practicing <span>Agile Methodologies</span> and <span>Scrum</span> in building that project, I learned to properly manage my time in executing a task to reach a deadline.
+                        I’m particularly interested in <span>embedded</span> and <span>electronics-oriented </span>roles within <span>consumer hardware</span>, <span>embedded devices</span>, and <span>hardware-adjacent engineering </span>teams, where a strong foundation in both 
+                        software and electrical engineering is a meaningful advantage.
                     </p>
                 </div>
                 <div className='line'/>

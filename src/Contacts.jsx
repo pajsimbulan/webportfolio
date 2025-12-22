@@ -149,7 +149,7 @@ function Contacts() {
                         <p>Email</p>
                     </div>
                     <div className='link-col'>
-                        <button onClick={() => openLink('https://drive.google.com/file/d/1DlGZiOZaH9dbk5l4z4Gy6XoOj3rTm4Q5/view')}>
+                        <button onClick={() => openLink('https://drive.google.com/file/d/1CC0aqSqL7YysBZUeufnTR48PjjTOet9w/view')}>
                         <img src={resumeicon} alt="resume"/>
                         </button>
                         <p>Resume</p>
