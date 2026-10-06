@@ -67,7 +67,7 @@ width: 100%;
   to {opacity: 1}
 }
 
-.slideshow-container img {
+.slideshow-container img, .slideshow-container video {
     object-fit: contain;
     border-radius: 30px;
     height:100%;

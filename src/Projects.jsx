@@ -26,6 +26,10 @@ import heroku from './assets/heroku.svg';
 import linux from './assets/linux.svg';
 import tailwindcss from './assets/tailwindcss.svg';
 import hostinger from './assets/hostinger.svg';
+import kicad from './assets/kicad.svg';
+import espressif from './assets/espressif.svg';
+import cmake from './assets/cmake.svg';
+import githubactions from './assets/githubactions.svg';
 
 
 function Projects() {
@@ -53,6 +57,57 @@ function Projects() {
                     </div>
             </div>}
             <h1>Projects</h1>
+            <div className="projectContainer p2"> 
+                <div className="projectText">
+                    <h2 className="projectTitle" style={{color:'#d97706'}}>Oscil</h2>
+                    <h3 className='projectSubTitle'>Two-Channel Oscilloscope and Function Generator on Three ESP32-S3s</h3>
+                    <p><span>Oscil</span> is an <span>embedded systems</span> project: a touchscreen oscilloscope and function generator built from three <span>ESP32-S3</span> microcontrollers, written in <span>C</span> on <span>ESP-IDF</span> and <span>FreeRTOS</span>. I designed it from the requirements and <span>KiCad</span> schematic through breadboard bring-up, firmware, cloud backend and tests.</p>
+                    <p><span>Firmware.</span> <span>Bare-metal</span>, register-level drivers written from the ESP32-S3 Technical Reference Manual for <span>GPIO</span>, <span>SPI</span>, <span>UART</span>, <span>GDMA</span> and a hardware timer interrupt, with no vendor driver layer. On top of them, <span>FreeRTOS</span> tasks pinned to each core handle acquisition, the UI, networking and the links, synchronized with queues, event groups and critical sections. Two ADS7883 ADCs on dual-line SPI at 26.67 MHz read both channels in one frame, with <span>DMA</span> burst capture up to about 620 kSa/s, and an edge trigger with hysteresis and min/max decimation run in their own task on the second core. Boards talk over a <span>COBS</span>-framed, <span>CRC-16</span> checked UART link at 2 Mbaud: 31.8 frames/s, zero errors. The generator runs <span>DDS</span> in a 100 kHz timer <span>interrupt</span> into an 8-bit R-2R DAC. The display drives an 800x480 RGB panel with <span>LVGL</span>, PSRAM double buffering and <span>I2C</span> touch. Settings and calibration live in <span>NVS</span>, and firmware updates over <span>HTTPS OTA</span> into A/B partitions, where a self-test confirms the new image or <span>rolls it back</span>. <span>Wi-Fi</span> reconnects with backoff, and <span>TLS</span> requests run on worker tasks so the UI never blocks.</p>
+                    <p><span>Testing.</span> Nine <span>Unity</span> host-test suites (trigger, decimation, DDS, link framing, ring buffer, measurements, front-end math and image format) run on every push in <span>GitHub Actions CI</span>. Every pin was checked on a <span>logic analyzer</span>, and the analog side with an oscilloscope and multimeter.</p>
+                    <p><span>Hardware and cloud.</span> Analog front ends, an R-2R DAC with a Sallen-Key filter, and the power rails, drawn in KiCad. <span>Supabase</span> accounts with <span>PostgreSQL row-level security</span>, a private storage bucket and a TypeScript Edge Function with PBKDF2 secret-phrase password reset, verified by a 17-check Python isolation test.</p>
+                    <p style={{alignSelf:'stretch'}}><span>Next:</span> a custom PCB in KiCad to replace the breadboards, and a 3D-printed enclosure.</p>
+                    <div className='row'>
+                        <h3>Version: </h3>
+                        <p>0.8 (working prototype)</p>
+                    </div>
+                    <div className='row'>
+                        <h3>Technologies Used: </h3>
+                    </div>
+                    <div className="row">
+                        <div className="chip">C <img src={c}></img></div>
+                        <div className="chip">ESP32-S3 / ESP-IDF <img src={espressif}></img></div>
+                        <div className="chip">FreeRTOS</div>
+                        <div className="chip">LVGL</div>
+                        <div className="chip">mbedTLS</div>
+                        <div className="chip">Unity</div>
+                        <div className="chip">CMake <img src={cmake}></img></div>
+                        <div className="chip">GitHub Actions <img src={githubactions}></img></div>
+                        <div className="chip">Supabase <img src={supabase}></img></div>
+                        <div className="chip">Postgresql <img src={postgresql}></img></div>
+                        <div className="chip">Typescript <img src={typescript}></img></div>
+                        <div className="chip">Python <img src={python}></img></div>
+                        <div className="chip">Matplotlib</div>
+                        <div className="chip">Github <img src={git}></img></div>
+                    </div>
+                    <div className='row'>
+                        <h3>Tools Used: </h3>
+                    </div>
+                    <div className="row">
+                        <div className="chip">KiCad <img src={kicad}></img></div>
+                        <div className="chip">Logic Analyzer (PulseView)</div>
+                        <div className="chip">Oscilloscope</div>
+                        <div className="chip">Multimeter</div>
+                        <div className="chip">Soldering</div>
+                        <div className="chip">VS Code (ESP-IDF)</div>
+                    </div>
+                    <br />
+                    <div style={{display:'flex', flexDirection:'column', flexGrow:1}}/>
+                    <button onClick={() => {openLink('https://github.com/pajsimbulan/oscil')}}>Code</button>
+                </div>
+                <div className="projectImage">
+                    <Carousel projectName='oscil'/>
+                </div>
+            </div>
             <div className="projectContainer p1"> 
                 <div className="projectImage">
                     <Carousel projectName='mailman'/>
