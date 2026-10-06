@@ -68,7 +68,7 @@ function Projects() {
                     <p style={{alignSelf:'stretch'}}><span>Next:</span> a custom PCB in KiCad to replace the breadboards, and a 3D-printed enclosure.</p>
                     <div className='row'>
                         <h3>Version: </h3>
-                        <p>0.8 (working prototype)</p>
+                        <p>0.9.0 (working prototype)</p>
                     </div>
                     <div className='row'>
                         <h3>Technologies Used: </h3>
