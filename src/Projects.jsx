@@ -30,6 +30,30 @@ import kicad from './assets/kicad.svg';
 import espressif from './assets/espressif.svg';
 import cmake from './assets/cmake.svg';
 import githubactions from './assets/githubactions.svg';
+import freertos from './assets/freertos.svg';
+import gdb from './assets/gdb.svg';
+import pulseview from './assets/pulseview.svg';
+import cia from './assets/cia.svg';
+import nordic from './assets/nordic.svg';
+import vscode from './assets/vscode.svg';
+import unity from './assets/unity.png';
+import nimble from './assets/nimble.png';
+import lvgl from './assets/lvgl.svg';
+import mbedtls from './assets/mbedtls.png';
+import matplotlib from './assets/matplotlib.png';
+import oscilloscope from './assets/oscilloscope.svg';
+import multimeter from './assets/multimeter.svg';
+import soldering from './assets/soldering.svg';
+import ti from './assets/ti.svg';
+import arm from './assets/arm.svg';
+import bluetooth from './assets/bluetooth.svg';
+import icon_board from './assets/icon_board.svg';
+import icon_debug from './assets/icon_debug.svg';
+import icon_interrupt from './assets/icon_interrupt.svg';
+import icon_module from './assets/icon_module.svg';
+import icon_phoneapp from './assets/icon_phoneapp.svg';
+import icon_timer from './assets/icon_timer.svg';
+import icon_uart from './assets/icon_uart.svg';
 
 
 function Projects() {
@@ -76,17 +100,17 @@ function Projects() {
                     <div className="row">
                         <div className="chip">C <img src={c}></img></div>
                         <div className="chip">ESP32-S3 / ESP-IDF <img src={espressif}></img></div>
-                        <div className="chip">FreeRTOS</div>
-                        <div className="chip">LVGL</div>
-                        <div className="chip">mbedTLS</div>
-                        <div className="chip">Unity</div>
+                        <div className="chip">FreeRTOS <img src={freertos}></img></div>
+                        <div className="chip">LVGL <img src={lvgl}></img></div>
+                        <div className="chip">mbedTLS <img src={mbedtls}></img></div>
+                        <div className="chip">Unity <img src={unity}></img></div>
                         <div className="chip">CMake <img src={cmake}></img></div>
                         <div className="chip">GitHub Actions <img src={githubactions}></img></div>
                         <div className="chip">Supabase <img src={supabase}></img></div>
                         <div className="chip">Postgresql <img src={postgresql}></img></div>
                         <div className="chip">Typescript <img src={typescript}></img></div>
                         <div className="chip">Python <img src={python}></img></div>
-                        <div className="chip">Matplotlib</div>
+                        <div className="chip">Matplotlib <img src={matplotlib}></img></div>
                         <div className="chip">Github <img src={git}></img></div>
                     </div>
                     <div className='row'>
@@ -94,11 +118,11 @@ function Projects() {
                     </div>
                     <div className="row">
                         <div className="chip">KiCad <img src={kicad}></img></div>
-                        <div className="chip">Logic Analyzer (PulseView)</div>
-                        <div className="chip">Oscilloscope</div>
-                        <div className="chip">Multimeter</div>
-                        <div className="chip">Soldering</div>
-                        <div className="chip">VS Code (ESP-IDF)</div>
+                        <div className="chip">Logic Analyzer (PulseView) <img src={pulseview}></img></div>
+                        <div className="chip">Oscilloscope <img src={oscilloscope}></img></div>
+                        <div className="chip">Multimeter <img src={multimeter}></img></div>
+                        <div className="chip">Soldering <img src={soldering}></img></div>
+                        <div className="chip">VS Code (ESP-IDF) <img src={vscode}></img></div>
                     </div>
                     <br />
                     <div style={{display:'flex', flexDirection:'column', flexGrow:1}}/>
@@ -106,6 +130,82 @@ function Projects() {
                 </div>
                 <div className="projectImage">
                     <Carousel projectName='oscil'/>
+                </div>
+            </div>
+            <div className="projectContainer p1"> 
+                <div className="projectImage">
+                    <Carousel projectName='esp32labs'/>
+                </div>
+                <div className="projectText">
+                    <h2 className="projectTitle" style={{color:'#b91c1c'}}>ESP32-S3 Firmware Labs</h2>
+                    <h3 className='projectSubTitle'>24 Embedded C Labs on ESP-IDF and FreeRTOS, Built and Tested on Hardware</h3>
+                    <p>A summer series of <span>24 firmware labs</span> I wrote and ran on the <span>ESP32-S3</span> to master the concepts, then put them to work in my bigger project, Oscil, above. The labs are the breadth and Oscil is the depth. Each one is a standalone <span>ESP-IDF</span> project in <span>C</span> with a goal, a measurement and a write-up of what broke. I picked the S3 for its features, Wi-Fi, BLE, CAN, DMA and built-in JTAG, and to practice <span>FreeRTOS</span> alongside the bare-metal TM4C123 work at university. Think of it as classroom-style labs, but 24 of them instead of the usual 8 to 12.</p>
+                    <p><span>Labs.</span> 0 Toolchain and first flash. 1 <span>GPIO</span> and debounce. 2 FreeRTOS tasks. 3 <span>UART</span> loopback. 4 Periodic <span>timers</span>. 5 <span>I2C</span> IMU driver. 6 <span>PWM</span>. 7 Sensor pipeline with semaphores. 8 Interrupts and crash dumps. 9 <span>SPI</span> master. 10 <span>NVS</span> storage. 11 <span>Unity</span> unit tests on target. 12 <span>Deep sleep</span>. 13 <span>Wi-Fi</span> HTTP telemetry. 14 <span>BLE GATT</span> with NimBLE. 15 <span>OTA updates with rollback</span>. 16 <span>Priority inversion</span> and mutexes. 17 <span>CAN bus (TWAI)</span> with two nodes. 18 <span>PID control</span> with anti-windup. 19 Labeled data capture for ML. 20 Continuous ADC with <span>DMA</span>. 21 <span>JTAG debugging</span> with OpenOCD and GDB. 22 SPI TFT display with DMA. 23 <span>Production test mode</span> and a Python factory station.</p>
+                    <p><span>Highlights.</span> Brought up every common bus (<span>GPIO</span>, <span>UART</span>, <span>I2C</span>, <span>SPI</span>, <span>CAN</span>) with the ESP-IDF drivers and checked each one on a <span>logic analyzer</span>. Built real-time <span>FreeRTOS</span> pipelines with tasks, queues and semaphores, and fixed a <span>priority inversion</span> with a mutex (800 ms wait down to 300 ms). Connected the board to a laptop over <span>Wi-Fi</span> and to a phone over <span>BLE</span>, and shipped <span>OTA updates</span> that roll back on their own when a self-test fails. Moved data with <span>DMA</span> for a 20 kHz ADC and an 8 fps SPI display, tuned a <span>PID</span> controller (overshoot from 14.6% to 2.5%), and used <span>deep sleep</span> with a timer wake and RTC memory. Caught bugs with <span>GDB</span> watchpoints and crash dumps, tested logic with <span>Unity</span> on the chip, and finished with a <span>factory test station</span> that logs PASS or FAIL per board.</p>
+                    <div className='row'>
+                        <h3>Technologies Used: </h3>
+                    </div>
+                    <div className="row">
+                        <div className="chip">C <img src={c}></img></div>
+                        <div className="chip">ESP32-S3 / ESP-IDF <img src={espressif}></img></div>
+                        <div className="chip">FreeRTOS <img src={freertos}></img></div>
+                        <div className="chip">NimBLE (BLE) <img src={nimble}></img></div>
+                        <div className="chip">TWAI / CAN <img src={cia}></img></div>
+                        <div className="chip">Unity <img src={unity}></img></div>
+                        <div className="chip">CMake <img src={cmake}></img></div>
+                        <div className="chip">Python <img src={python}></img></div>
+                        <div className="chip">Github <img src={git}></img></div>
+                    </div>
+                    <div className='row'>
+                        <h3>Tools Used: </h3>
+                    </div>
+                    <div className="row">
+                        <div className="chip">Logic Analyzer (PulseView) <img src={pulseview}></img></div>
+                        <div className="chip">OpenOCD <img src={icon_debug}></img></div>
+                        <div className="chip">GDB <img src={gdb}></img></div>
+                        <div className="chip">nRF Connect <img src={nordic}></img></div>
+                        <div className="chip">VS Code (ESP-IDF) <img src={vscode}></img></div>
+                    </div>
+                    <br />
+                    <div style={{display:'flex', flexDirection:'column', flexGrow:1}}/>
+                    <button onClick={() => {openLink('https://github.com/pajsimbulan/esp32s3-firmware-lab')}}>Code</button>
+                </div>
+            </div>
+            <div className="projectContainer p2"> 
+                <div className="projectText">
+                    <h2 className="projectTitle" style={{color:'#2563eb'}}>Bluetooth Music Player</h2>
+                    <h3 className='projectSubTitle'>Bare-Metal C on a TI TM4C123, Controlled from a Phone over BLE</h3>
+                    <p>My final assignment for <span>ECE 425 Microprocessor Systems</span> at CSUN, built with a partner. We picked the topic, wrote the proposal and built it end to end. Ten songs live on a <span>TM4C123 LaunchPad</span> (<span>ARM Cortex-M4</span>). A phone sends one character over <span>Bluetooth Low Energy</span> through an <span>HM-10</span> module, and the board plays that song on a buzzer. We chose the HM-10 over the suggested HC-05 because iPhones can't talk to Bluetooth Classic.</p>
+                    <p><span>Firmware.</span> <span>Bare-metal C</span> written straight to the registers, with no vendor library. <span>UART5</span> at 9600 baud receives the command, a short <span>interrupt handler</span> stores it, and the main loop plays the song. <span>Timer0</span> gives a 1 us time base, and each note is a square wave on a <span>GPIO</span> pin. Songs are tables of pitch, octave and length, and a new key switches songs between notes.</p>
+                    <p><span>Debugging.</span> The byte arrived but no song played, and the tones were too high. Keil was booting the chip at 50 MHz while our timer and baud math assumed 16 MHz, and one line fixed both. We also caught a UART interrupt that kept re-firing because an error flag was never cleared.</p>
+                    <p>Special thanks to Dr. Shahnam Mirzaei and my partner.</p>
+                    <div className='row'>
+                        <h3>Technologies Used: </h3>
+                    </div>
+                    <div className="row">
+                        <div className="chip">C <img src={c}></img></div>
+                        <div className="chip">TI TM4C123 <img src={ti}></img></div>
+                        <div className="chip">ARM Cortex-M4 <img src={arm}></img></div>
+                        <div className="chip">Bluetooth Low Energy <img src={bluetooth}></img></div>
+                        <div className="chip">UART <img src={icon_uart}></img></div>
+                        <div className="chip">Timers <img src={icon_timer}></img></div>
+                        <div className="chip">Interrupts (NVIC) <img src={icon_interrupt}></img></div>
+                    </div>
+                    <div className='row'>
+                        <h3>Tools Used: </h3>
+                    </div>
+                    <div className="row">
+                        <div className="chip">Keil uVision <img src={arm}></img></div>
+                        <div className="chip">HM-10 BLE Module <img src={icon_module}></img></div>
+                        <div className="chip">EduBase Trainer Board <img src={icon_board}></img></div>
+                        <div className="chip">LightBlue App <img src={icon_phoneapp}></img></div>
+                    </div>
+                    <br />
+                    <div style={{display:'flex', flexDirection:'column', flexGrow:1}}/>
+                    <button onClick={() => {openLink('https://github.com/pajsimbulan/ece425_final_assignment')}}>Code</button>
+                </div>
+                <div className="projectImage">
+                    <Carousel projectName='ece425'/>
                 </div>
             </div>
             <div className="projectContainer p1"> 
@@ -201,7 +301,7 @@ function Projects() {
                     <Carousel projectName='slugfit'/>
                 </div>
             </div>
-            <div className="projectContainer p3"> 
+            <div className="projectContainer p1"> 
                 <div className="projectImage">
                     <Carousel projectName='httpserver'/>
                 </div>
@@ -225,7 +325,7 @@ function Projects() {
                     <button onClick={() => {openLink('https://github.com/pajsimbulan/httpserver')}}>Code</button>
                 </div>
             </div>
-            <div className="projectContainer p4"> 
+            <div className="projectContainer p2"> 
                 <div className="projectText">
                     <h2 className="projectTitle" style={{color:'#7f8b99'}}>Huffman Encoding and Decoding in C</h2>
                     <h3 className='projectSubTitle'> A Lossless Data Compression Implementation</h3>
@@ -249,7 +349,7 @@ function Projects() {
                     <Carousel projectName='huffman'/>
                 </div>
             </div>
-            <div className="projectContainer p5"> 
+            <div className="projectContainer p1"> 
                 <div className="projectImage">
                     <Carousel projectName='website'/>
                 </div>
