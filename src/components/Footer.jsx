@@ -25,7 +25,7 @@ function Footer() {
                     <img src={gmail} alt="gmail icon"/>
                 </button>
 
-                <button onClick={() => openLink('https://drive.google.com/file/d/1KKCZWOvvwbgi-0Xt9AZ8dojoed0UOZ4m/view?usp=sharing')}>
+                <button onClick={() => openLink('https://drive.google.com/file/d/1Ed45MRyXoe4oGLqbE-E-5n76s3O6eAdo/view?usp=sharing')}>
                     <img src={resumeicon} alt='RESUME'></img>
                 </button>
             </div>
