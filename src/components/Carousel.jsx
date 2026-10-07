@@ -59,6 +59,70 @@ import oscil_concept_product from '../assets/oscil/concept_product.svg';
 import oscil_concept_enclosure_dimensions from '../assets/oscil/concept_enclosure_dimensions.svg';
 import oscil_concept_pcb from '../assets/oscil/concept_pcb.svg';
 
+import labs_lab00_demo_hello_restart_countdown from '../assets/esp32labs/lab00_demo_hello_restart_countdown.mp4';
+import labs_lab01_concept_button_pullup from '../assets/esp32labs/lab01_concept_button_pullup.jpg';
+import labs_lab01_demo_boot_button_cycles_rgb_led from '../assets/esp32labs/lab01_demo_boot_button_cycles_rgb_led.mp4';
+import labs_lab02_concept_task_states from '../assets/esp32labs/lab02_concept_task_states.jpg';
+import labs_lab02_demo_worker_and_heartbeat_tasks from '../assets/esp32labs/lab02_demo_worker_and_heartbeat_tasks.mp4';
+import labs_lab03_concept_uart_8n1_frame from '../assets/esp32labs/lab03_concept_uart_8n1_frame.jpg';
+import labs_lab03_demo_uart_loopback_wire_pulled from '../assets/esp32labs/lab03_demo_uart_loopback_wire_pulled.mp4';
+import labs_lab04_bench_logic_analyzer_on_gpio4 from '../assets/esp32labs/lab04_bench_logic_analyzer_on_gpio4.jpg';
+import labs_lab04_proof_analyzer_500hz_and_1000_samples from '../assets/esp32labs/lab04_proof_analyzer_500hz_and_1000_samples.jpg';
+import labs_lab05_concept_i2c_bus_and_transaction from '../assets/esp32labs/lab05_concept_i2c_bus_and_transaction.jpg';
+import labs_lab05_demo_mpu_tilt_with_i2c_capture from '../assets/esp32labs/lab05_demo_mpu_tilt_with_i2c_capture.mp4';
+import labs_lab06_concept_pwm_duty_cycle from '../assets/esp32labs/lab06_concept_pwm_duty_cycle.jpg';
+import labs_lab06_demo_led_pwm_fade from '../assets/esp32labs/lab06_demo_led_pwm_fade.mp4';
+import labs_lab07_concept_sensor_pipeline from '../assets/esp32labs/lab07_concept_sensor_pipeline.jpg';
+import labs_lab07_demo_vibration_rms_with_uart_log from '../assets/esp32labs/lab07_demo_vibration_rms_with_uart_log.mp4';
+import labs_lab08_concept_reading_a_crash_dump from '../assets/esp32labs/lab08_concept_reading_a_crash_dump.jpg';
+import labs_lab08_proof_gdb_break_inside_button_isr from '../assets/esp32labs/lab08_proof_gdb_break_inside_button_isr.jpg';
+import labs_lab09_concept_spi_full_duplex from '../assets/esp32labs/lab09_concept_spi_full_duplex.jpg';
+import labs_lab09_proof_spi_loopback_decoded_deadbeef from '../assets/esp32labs/lab09_proof_spi_loopback_decoded_deadbeef.jpg';
+import labs_lab10_concept_flash_vs_ram from '../assets/esp32labs/lab10_concept_flash_vs_ram.jpg';
+import labs_lab10_demo_boot_counter_survives_reset from '../assets/esp32labs/lab10_demo_boot_counter_survives_reset.mp4';
+import labs_lab11_concept_extract_logic_to_test from '../assets/esp32labs/lab11_concept_extract_logic_to_test.jpg';
+import labs_lab11_proof_unity_tests_pass from '../assets/esp32labs/lab11_proof_unity_tests_pass.jpg';
+import labs_lab12_concept_sleep_current_profile from '../assets/esp32labs/lab12_concept_sleep_current_profile.jpg';
+import labs_lab12_demo_deep_sleep_wake_counter from '../assets/esp32labs/lab12_demo_deep_sleep_wake_counter.mp4';
+import labs_lab13_concept_wifi_init_and_events from '../assets/esp32labs/lab13_concept_wifi_init_and_events.jpg';
+import labs_lab13_demo_wifi_http_post_to_laptop from '../assets/esp32labs/lab13_demo_wifi_http_post_to_laptop.mp4';
+import labs_lab14_concept_gatt_table from '../assets/esp32labs/lab14_concept_gatt_table.jpg';
+import labs_lab14_demo_ble_notify_phone_and_log from '../assets/esp32labs/lab14_demo_ble_notify_phone_and_log.mp4';
+import labs_lab15_concept_ab_slots_and_rollback from '../assets/esp32labs/lab15_concept_ab_slots_and_rollback.jpg';
+import labs_lab15_demo_ota_update_v1_to_v2 from '../assets/esp32labs/lab15_demo_ota_update_v1_to_v2.mp4';
+import labs_lab16_concept_priority_inversion_timeline from '../assets/esp32labs/lab16_concept_priority_inversion_timeline.jpg';
+import labs_lab16_proof_binary_semaphore_800ms from '../assets/esp32labs/lab16_proof_binary_semaphore_800ms.jpg';
+import labs_lab16_proof_mutex_300ms from '../assets/esp32labs/lab16_proof_mutex_300ms.jpg';
+import labs_lab17_concept_can_arbitration from '../assets/esp32labs/lab17_concept_can_arbitration.jpg';
+import labs_lab17_proof_can_frame_0x456_decoded from '../assets/esp32labs/lab17_proof_can_frame_0x456_decoded.jpg';
+import labs_lab17_demo_can_two_nodes_125k from '../assets/esp32labs/lab17_demo_can_two_nodes_125k.mp4';
+import labs_lab17_demo_can_500k_bus_errors_bus_off from '../assets/esp32labs/lab17_demo_can_500k_bus_errors_bus_off.mp4';
+import labs_lab18_concept_anti_windup from '../assets/esp32labs/lab18_concept_anti_windup.jpg';
+import labs_lab18_proof_step_response_board_zoom from '../assets/esp32labs/lab18_proof_step_response_board_zoom.jpg';
+import labs_lab20_concept_cpu_vs_dma from '../assets/esp32labs/lab20_concept_cpu_vs_dma.jpg';
+import labs_lab20_demo_pot_sweep_dma_adc from '../assets/esp32labs/lab20_demo_pot_sweep_dma_adc.mp4';
+import labs_lab21_concept_jtag_openocd_gdb from '../assets/esp32labs/lab21_concept_jtag_openocd_gdb.jpg';
+import labs_lab21_proof_watchpoint_catches_overflow from '../assets/esp32labs/lab21_proof_watchpoint_catches_overflow.jpg';
+import labs_lab21_proof_same_address_root_cause from '../assets/esp32labs/lab21_proof_same_address_root_cause.jpg';
+import labs_lab22_concept_ping_pong_buffers from '../assets/esp32labs/lab22_concept_ping_pong_buffers.jpg';
+import labs_lab22_demo_tft_image_over_spi_dma from '../assets/esp32labs/lab22_demo_tft_image_over_spi_dma.mp4';
+import labs_lab22_proof_8fps_log from '../assets/esp32labs/lab22_proof_8fps_log.jpg';
+import labs_lab23_concept_factory_flow from '../assets/esp32labs/lab23_concept_factory_flow.jpg';
+import labs_lab23_demo_factory_test_pass_fail_pass from '../assets/esp32labs/lab23_demo_factory_test_pass_fail_pass.mp4';
+import labs_lab23_proof_station_pass_fail_pass from '../assets/esp32labs/lab23_proof_station_pass_fail_pass.jpg';
+
+import ece425_s01 from '../assets/ece425/slide01.svg';
+import ece425_s02 from '../assets/ece425/slide02.svg';
+import ece425_s03 from '../assets/ece425/slide03.svg';
+import ece425_s04 from '../assets/ece425/slide04.svg';
+import ece425_s05 from '../assets/ece425/slide05.svg';
+import ece425_s06 from '../assets/ece425/slide06.svg';
+import ece425_s07 from '../assets/ece425/slide07.svg';
+import ece425_s08 from '../assets/ece425/slide08.svg';
+import ece425_s09 from '../assets/ece425/slide09.svg';
+import ece425_s10 from '../assets/ece425/slide10.svg';
+import ece425_s11 from '../assets/ece425/slide11.svg';
+
 import mailmanPCEmailToolbar from '../assets/mailman/pc/body_settings.jpg';
 import mailmanPCChangeProfilePicture from '../assets/mailman/pc/change_profile_picture.jpg';
 import mailmanPCCompose from '../assets/mailman/pc/compose_with_images_files.jpg';
@@ -367,6 +431,76 @@ const oscilFiles = {
     "Next step concept, the three-MCU design moved off the breadboards onto one PCB with a battery, and how it all stacks together": oscil_concept_pcb,
 }
 
+const esp32labsDescriptions = ["Lab 0: ESP-IDF toolchain set up, first firmware built, flashed and running with a restart countdown", "Lab 1: GPIO input, how a pull-up resistor makes the BOOT button active-low", "Lab 1: GPIO, pressing the BOOT button with debounce cycles the RGB LED colors", "Lab 2: FreeRTOS task states, running, ready, blocked and suspended", "Lab 2: FreeRTOS, a heartbeat task and a worker task running side by side with drift-free vTaskDelayUntil timing", "Lab 3: UART, one 8N1 frame with start bit, 8 data bits and stop bit", "Lab 3: UART loopback test, pulling the TX to RX wire makes the check fail live", "Lab 4: periodic timer, logic analyzer clipped onto the output pin", "Lab 4: esp_timer callback toggling a pin at 500 Hz, measured in PulseView", "Lab 5: I2C bus wiring and a register read transaction", "Lab 5: ESP-IDF I2C master driver reading the MPU-6500 IMU, tilting the board changes the g values", "Lab 6: PWM, how duty cycle sets LED brightness", "Lab 6: LEDC PWM, a task steps the duty cycle to fade an LED", "Lab 7: sensor pipeline, a fixed-rate sampler task hands windows to a processing task with semaphores", "Lab 7: tapping the board raises the RMS vibration value computed on the ESP32", "Lab 8: reading an ESP32 panic and backtrace to find the crashing line", "Lab 8: GPIO interrupt, GDB stopped inside the button ISR", "Lab 9: SPI is full duplex, a byte goes out on MOSI while one comes back on MISO", "Lab 9: SPI master loopback decoded on a logic analyzer, DEADBEEF out and back", "Lab 10: NVS, what survives a reset in flash and what is lost in RAM", "Lab 10: NVS boot counter keeps counting across resets", "Lab 11: unit testing, splitting pure logic from hardware so it can be tested", "Lab 11: Unity unit tests running on the ESP32-S3, all passing", "Lab 12: deep sleep, current draw while awake vs asleep", "Lab 12: deep sleep with a timer wake, RTC memory keeps the wake count", "Lab 13: Wi-Fi station startup and the event handler flow", "Lab 13: Wi-Fi telemetry, the board POSTs JSON over HTTP to a server on my laptop", "Lab 14: BLE GATT table, service, characteristic and CCCD", "Lab 14: BLE GATT server with NimBLE, live notifications to nRF Connect on my phone", "Lab 15: OTA with two app slots, self-test and automatic rollback", "Lab 15: OTA firmware update over Wi-Fi from v1 to v2, self-test passes and the image is kept", "Lab 16: priority inversion, the high priority task stuck behind a medium one", "Lab 16: with a binary semaphore the high priority task waits 800 ms, 30 trials", "Lab 16: with a mutex and priority inheritance the wait drops to 300 ms", "Lab 17: CAN bus arbitration, the lower ID wins without corrupting the frame", "Lab 17: CAN (TWAI) frame between two ESP32-S3 nodes decoded in PulseView, with the ACK bit", "Lab 17: two ESP32-S3 CAN nodes exchanging frames at 125 kbit/s with zero errors", "Lab 17: at 500 kbit/s the error counters climb and the node goes bus-off and recovers", "Lab 18: PID integrator windup and how anti-windup stops it", "Lab 18: PID step responses from the board, anti-windup cuts overshoot from 14.6 to 2.5", "Lab 20: reading every ADC sample with the CPU vs letting DMA fill whole frames", "Lab 20: continuous ADC with DMA at 20 kHz, sweeping a potentiometer", "Lab 21: debug chain, built-in USB-JTAG to OpenOCD to GDB", "Lab 21: GDB hardware watchpoint catching an off-by-one array write as it happens", "Lab 21: root cause, win[8] and win_len share the same address", "Lab 22: ping-pong DMA buffers, fill one while the other is sent", "Lab 22: a photo drawn on an ST7789 TFT over SPI with DMA", "Lab 22: 8.0 fps measured, matching the 10 MHz SPI wire limit", "Lab 23: production test flow, boot, handshake, self-tests, PASS or FAIL", "Lab 23: factory test station in Python, PASS, then FAIL with the IMU unplugged, then PASS", "Lab 23: the station log with serial number and failing test names"];
+const esp32labsFiles = {
+    "Lab 0: ESP-IDF toolchain set up, first firmware built, flashed and running with a restart countdown": labs_lab00_demo_hello_restart_countdown,
+    "Lab 1: GPIO input, how a pull-up resistor makes the BOOT button active-low": labs_lab01_concept_button_pullup,
+    "Lab 1: GPIO, pressing the BOOT button with debounce cycles the RGB LED colors": labs_lab01_demo_boot_button_cycles_rgb_led,
+    "Lab 2: FreeRTOS task states, running, ready, blocked and suspended": labs_lab02_concept_task_states,
+    "Lab 2: FreeRTOS, a heartbeat task and a worker task running side by side with drift-free vTaskDelayUntil timing": labs_lab02_demo_worker_and_heartbeat_tasks,
+    "Lab 3: UART, one 8N1 frame with start bit, 8 data bits and stop bit": labs_lab03_concept_uart_8n1_frame,
+    "Lab 3: UART loopback test, pulling the TX to RX wire makes the check fail live": labs_lab03_demo_uart_loopback_wire_pulled,
+    "Lab 4: periodic timer, logic analyzer clipped onto the output pin": labs_lab04_bench_logic_analyzer_on_gpio4,
+    "Lab 4: esp_timer callback toggling a pin at 500 Hz, measured in PulseView": labs_lab04_proof_analyzer_500hz_and_1000_samples,
+    "Lab 5: I2C bus wiring and a register read transaction": labs_lab05_concept_i2c_bus_and_transaction,
+    "Lab 5: ESP-IDF I2C master driver reading the MPU-6500 IMU, tilting the board changes the g values": labs_lab05_demo_mpu_tilt_with_i2c_capture,
+    "Lab 6: PWM, how duty cycle sets LED brightness": labs_lab06_concept_pwm_duty_cycle,
+    "Lab 6: LEDC PWM, a task steps the duty cycle to fade an LED": labs_lab06_demo_led_pwm_fade,
+    "Lab 7: sensor pipeline, a fixed-rate sampler task hands windows to a processing task with semaphores": labs_lab07_concept_sensor_pipeline,
+    "Lab 7: tapping the board raises the RMS vibration value computed on the ESP32": labs_lab07_demo_vibration_rms_with_uart_log,
+    "Lab 8: reading an ESP32 panic and backtrace to find the crashing line": labs_lab08_concept_reading_a_crash_dump,
+    "Lab 8: GPIO interrupt, GDB stopped inside the button ISR": labs_lab08_proof_gdb_break_inside_button_isr,
+    "Lab 9: SPI is full duplex, a byte goes out on MOSI while one comes back on MISO": labs_lab09_concept_spi_full_duplex,
+    "Lab 9: SPI master loopback decoded on a logic analyzer, DEADBEEF out and back": labs_lab09_proof_spi_loopback_decoded_deadbeef,
+    "Lab 10: NVS, what survives a reset in flash and what is lost in RAM": labs_lab10_concept_flash_vs_ram,
+    "Lab 10: NVS boot counter keeps counting across resets": labs_lab10_demo_boot_counter_survives_reset,
+    "Lab 11: unit testing, splitting pure logic from hardware so it can be tested": labs_lab11_concept_extract_logic_to_test,
+    "Lab 11: Unity unit tests running on the ESP32-S3, all passing": labs_lab11_proof_unity_tests_pass,
+    "Lab 12: deep sleep, current draw while awake vs asleep": labs_lab12_concept_sleep_current_profile,
+    "Lab 12: deep sleep with a timer wake, RTC memory keeps the wake count": labs_lab12_demo_deep_sleep_wake_counter,
+    "Lab 13: Wi-Fi station startup and the event handler flow": labs_lab13_concept_wifi_init_and_events,
+    "Lab 13: Wi-Fi telemetry, the board POSTs JSON over HTTP to a server on my laptop": labs_lab13_demo_wifi_http_post_to_laptop,
+    "Lab 14: BLE GATT table, service, characteristic and CCCD": labs_lab14_concept_gatt_table,
+    "Lab 14: BLE GATT server with NimBLE, live notifications to nRF Connect on my phone": labs_lab14_demo_ble_notify_phone_and_log,
+    "Lab 15: OTA with two app slots, self-test and automatic rollback": labs_lab15_concept_ab_slots_and_rollback,
+    "Lab 15: OTA firmware update over Wi-Fi from v1 to v2, self-test passes and the image is kept": labs_lab15_demo_ota_update_v1_to_v2,
+    "Lab 16: priority inversion, the high priority task stuck behind a medium one": labs_lab16_concept_priority_inversion_timeline,
+    "Lab 16: with a binary semaphore the high priority task waits 800 ms, 30 trials": labs_lab16_proof_binary_semaphore_800ms,
+    "Lab 16: with a mutex and priority inheritance the wait drops to 300 ms": labs_lab16_proof_mutex_300ms,
+    "Lab 17: CAN bus arbitration, the lower ID wins without corrupting the frame": labs_lab17_concept_can_arbitration,
+    "Lab 17: CAN (TWAI) frame between two ESP32-S3 nodes decoded in PulseView, with the ACK bit": labs_lab17_proof_can_frame_0x456_decoded,
+    "Lab 17: two ESP32-S3 CAN nodes exchanging frames at 125 kbit/s with zero errors": labs_lab17_demo_can_two_nodes_125k,
+    "Lab 17: at 500 kbit/s the error counters climb and the node goes bus-off and recovers": labs_lab17_demo_can_500k_bus_errors_bus_off,
+    "Lab 18: PID integrator windup and how anti-windup stops it": labs_lab18_concept_anti_windup,
+    "Lab 18: PID step responses from the board, anti-windup cuts overshoot from 14.6 to 2.5": labs_lab18_proof_step_response_board_zoom,
+    "Lab 20: reading every ADC sample with the CPU vs letting DMA fill whole frames": labs_lab20_concept_cpu_vs_dma,
+    "Lab 20: continuous ADC with DMA at 20 kHz, sweeping a potentiometer": labs_lab20_demo_pot_sweep_dma_adc,
+    "Lab 21: debug chain, built-in USB-JTAG to OpenOCD to GDB": labs_lab21_concept_jtag_openocd_gdb,
+    "Lab 21: GDB hardware watchpoint catching an off-by-one array write as it happens": labs_lab21_proof_watchpoint_catches_overflow,
+    "Lab 21: root cause, win[8] and win_len share the same address": labs_lab21_proof_same_address_root_cause,
+    "Lab 22: ping-pong DMA buffers, fill one while the other is sent": labs_lab22_concept_ping_pong_buffers,
+    "Lab 22: a photo drawn on an ST7789 TFT over SPI with DMA": labs_lab22_demo_tft_image_over_spi_dma,
+    "Lab 22: 8.0 fps measured, matching the 10 MHz SPI wire limit": labs_lab22_proof_8fps_log,
+    "Lab 23: production test flow, boot, handshake, self-tests, PASS or FAIL": labs_lab23_concept_factory_flow,
+    "Lab 23: factory test station in Python, PASS, then FAIL with the IMU unplugged, then PASS": labs_lab23_demo_factory_test_pass_fail_pass,
+    "Lab 23: the station log with serial number and failing test names": labs_lab23_proof_station_pass_fail_pass,
+}
+
+const ece425Descriptions = ["ECE 425 Final Assignment: Bluetooth-controlled music player on a TI TM4C123 LaunchPad", "ECE 425 Final Assignment: project overview, iPhone to HM-10 BLE module to TM4C123 to buzzer, with the full EduBase build", "ECE 425 Final Assignment: Classic Bluetooth vs Bluetooth Low Energy, and sending a command from the LightBlue app", "ECE 425 Final Assignment: the HM-10 BLE-to-UART bridge (TI CC2541), pins, voltage and default 9600 8N1", "ECE 425 Final Assignment: wiring the HM-10 TX to UART5 RX on PE4", "ECE 425 Final Assignment: firmware setup order, GPIO, Timer0, UART5 and the NVIC interrupt", "ECE 425 Final Assignment: generating tones as square waves on PC4 with a 1 us Timer0 time base", "ECE 425 Final Assignment: bare-metal UART5 register setup at 9600 baud", "ECE 425 Final Assignment: a short UART interrupt handler that hands the command to main()", "ECE 425 Final Assignment: debugging the 50 MHz clock bug that threw off timing and baud rate", "ECE 425 Final Assignment: how it all connects, plus ideas for what's next"];
+const ece425Files = {
+    "ECE 425 Final Assignment: Bluetooth-controlled music player on a TI TM4C123 LaunchPad": ece425_s01,
+    "ECE 425 Final Assignment: project overview, iPhone to HM-10 BLE module to TM4C123 to buzzer, with the full EduBase build": ece425_s02,
+    "ECE 425 Final Assignment: Classic Bluetooth vs Bluetooth Low Energy, and sending a command from the LightBlue app": ece425_s03,
+    "ECE 425 Final Assignment: the HM-10 BLE-to-UART bridge (TI CC2541), pins, voltage and default 9600 8N1": ece425_s04,
+    "ECE 425 Final Assignment: wiring the HM-10 TX to UART5 RX on PE4": ece425_s05,
+    "ECE 425 Final Assignment: firmware setup order, GPIO, Timer0, UART5 and the NVIC interrupt": ece425_s06,
+    "ECE 425 Final Assignment: generating tones as square waves on PC4 with a 1 us Timer0 time base": ece425_s07,
+    "ECE 425 Final Assignment: bare-metal UART5 register setup at 9600 baud": ece425_s08,
+    "ECE 425 Final Assignment: a short UART interrupt handler that hands the command to main()": ece425_s09,
+    "ECE 425 Final Assignment: debugging the 50 MHz clock bug that threw off timing and baud rate": ece425_s10,
+    "ECE 425 Final Assignment: how it all connects, plus ideas for what's next": ece425_s11,
+}
+
 const getFiles = (projectName) => {
     switch(projectName) {
         case "mailmanPC":
@@ -383,6 +517,10 @@ const getFiles = (projectName) => {
             return websiteFiles;
         case "oscil":
             return oscilFiles;
+        case "esp32labs":
+            return esp32labsFiles;
+        case "ece425":
+            return ece425Files;
         default:
             return {};
     }
@@ -403,6 +541,10 @@ const getDescriptions = (projectName) => {
             return websiteDescriptions;
         case "oscil":
             return oscilDescriptions;
+        case "esp32labs":
+            return esp32labsDescriptions;
+        case "ece425":
+            return ece425Descriptions;
         default:
             return [];
     }
